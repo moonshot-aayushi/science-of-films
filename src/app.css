@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: #050A14;
+    color: #E8EDF2;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-gradient-amber {
+    background: linear-gradient(135deg, #F5A623 0%, #FFD080 60%, #F5A623 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .glow-amber {
+    box-shadow: 0 0 24px rgba(245, 166, 35, 0.35), 0 0 60px rgba(245, 166, 35, 0.1);
+  }
+
+  .glow-amber-sm {
+    box-shadow: 0 0 12px rgba(245, 166, 35, 0.25);
+  }
+
+  .starfield {
+    background-image:
+      radial-gradient(1px 1px at 15px 25px, rgba(255,255,255,0.18) 0%, transparent 100%),
+      radial-gradient(1px 1px at 60px 80px, rgba(255,255,255,0.12) 0%, transparent 100%),
+      radial-gradient(1px 1px at 120px 15px, rgba(255,255,255,0.14) 0%, transparent 100%),
+      radial-gradient(1px 1px at 200px 60px, rgba(255,255,255,0.10) 0%, transparent 100%),
+      radial-gradient(1px 1px at 320px 40px, rgba(255,255,255,0.16) 0%, transparent 100%),
+      radial-gradient(1px 1px at 450px 90px, rgba(255,255,255,0.12) 0%, transparent 100%),
+      radial-gradient(1px 1px at 550px 30px, rgba(255,255,255,0.14) 0%, transparent 100%),
+      radial-gradient(1px 1px at 700px 70px, rgba(255,255,255,0.10) 0%, transparent 100%),
+      radial-gradient(1px 1px at 800px 20px, rgba(255,255,255,0.18) 0%, transparent 100%),
+      radial-gradient(1px 1px at 950px 55px, rgba(255,255,255,0.13) 0%, transparent 100%),
+      radial-gradient(1px 1px at 1100px 10px, rgba(255,255,255,0.15) 0%, transparent 100%),
+      radial-gradient(1px 1px at 1200px 80px, rgba(255,255,255,0.11) 0%, transparent 100%);
+  }
+
+  .sci-grid {
+    background-image:
+      linear-gradient(rgba(245,166,35,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(245,166,35,0.04) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  .chapter-active {
+    color: #F5A623;
+    border-left-color: #F5A623;
+    background: rgba(245, 166, 35, 0.06);
+  }
+}
+
+/* Range input styling */
+input[type=range] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 100%;
+}
+
+input[type=range]::-webkit-slider-track {
+  background: rgba(245,166,35,0.2);
+  height: 4px;
+  border-radius: 2px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #F5A623;
+  margin-top: -7px;
+  box-shadow: 0 0 8px rgba(245,166,35,0.6);
+}
+
+input[type=range]::-moz-range-track {
+  background: rgba(245,166,35,0.2);
+  height: 4px;
+  border-radius: 2px;
+}
+
+input[type=range]::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #F5A623;
+  border: none;
+  box-shadow: 0 0 8px rgba(245,166,35,0.6);
+}
