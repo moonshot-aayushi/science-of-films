@@ -48,6 +48,18 @@ const projectHailMary: Film = {
           label: 'The Petrova Effect',
           icon: '★',
           intro: 'When a colony grows large enough, it visibly dims its host star — the "Petrova line." Drag the slider to see how even a tiny coverage fraction translates into an almost incomprehensible energy drain.'
+        },
+        {
+          id: 'taumoeba',
+          shortLabel: 'Taumoeba',
+          label: 'Taumoeba: The Solution',
+          icon: '◑',
+          intro: 'Astrophage has a predator. Native to the clouds of Tau Ceti e, Taumoeba evolved to eat the very organism threatening Earth\'s sun. Explore its discovery, attack mechanism, and how Grace bred it to survive temperatures found near our own star.',
+          stats: [
+            { label: 'Size', value: '~0.5 μm', sub: '4× smaller than Astrophage' },
+            { label: 'Evolved tolerance', value: '152°C', sub: 'after 500 lab generations' },
+            { label: 'Kill rate', value: '98%', sub: 'of Astrophage colony in 4 hrs' }
+          ]
         }
       ]
     },
@@ -88,6 +100,18 @@ const projectHailMary: Film = {
           label: 'The Hail Mary Mission',
           icon: '⌖',
           intro: 'A one-way trip to a star 11.9 light-years away, piloted by a sole crew member who doesn\'t know why he\'s there. Drag the speed slider to see how relativistic time dilation makes interstellar travel survivable — and what it costs the people left behind on Earth.'
+        },
+        {
+          id: 'tau-ceti',
+          shortLabel: 'Tau Ceti',
+          label: "Tau Ceti: The Destination Star",
+          icon: '✦',
+          intro: 'Not all stars are equal. Tau Ceti is 11.9 light-years away, slightly cooler and dimmer than our Sun, and — crucially — metal-poor in a way that may have given rise to Taumoeba. Click either star on the HR diagram to compare their properties.',
+          stats: [
+            { label: 'Distance', value: '11.9 ly', sub: 'from our solar system' },
+            { label: 'Luminosity', value: '0.52 L☉', sub: '48% dimmer than our Sun' },
+            { label: 'Metallicity', value: '0.3× Solar', sub: 'key to Taumoeba evolution' }
+          ]
         }
       ]
     },
@@ -100,6 +124,28 @@ const projectHailMary: Film = {
           label: 'What the Mission Did to Grace',
           icon: '♡',
           intro: 'Years in a medical coma aboard a ship traveling at relativistic speed. Toggle the medical pod off to see what would have happened without it — then back on to understand just how close to the edge Grace was living the entire voyage.'
+        },
+        {
+          id: 'stratts-decision',
+          shortLabel: "Stratt's Decisions",
+          label: "Eva Stratt's Decision Log",
+          icon: '⊗',
+          intro: 'Eva Stratt had unlimited authority and used it. Five decisions that violated law, ethics, and consent — each justified by the same utilitarian calculus: against extinction, individual rights are not the correct unit of analysis. Examine each choice she made and what it cost.',
+          note: {
+            label: 'The Ethics of Extinction-Level Decisions',
+            text: 'Weir does not resolve the ethical tension he creates. Stratt is portrayed as correct in outcome and monstrous in method. The novel asks whether that distinction matters — and doesn\'t answer.'
+          }
+        },
+        {
+          id: 'grace-scientist',
+          shortLabel: 'Grace\'s Science',
+          label: 'Ryland Grace: Five Experiments',
+          icon: '⬡',
+          intro: 'Grace was selected for the mission not because of what he knew, but how he thinks. Walk through the five pivotal experiments he ran aboard the Hail Mary — the discoveries that moved humanity from "we might die" to "here is a solution."',
+          note: {
+            label: 'Why a Teacher?',
+            text: 'Stratt chose Grace over domain specialists because first-contact science — biology no one has ever seen, problems no textbook addresses — requires a generalist who can explain things simply enough to think about them clearly. Grace\'s teaching background was a feature, not an afterthought.'
+          }
         }
       ]
     }
