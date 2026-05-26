@@ -15,6 +15,12 @@ import TaumoebaBiology from './TaumoebaBiology.svelte';
 import TauCetiStar from './TauCetiStar.svelte';
 import StrattsDecision from './StrattsDecision.svelte';
 import GraceScientist from './GraceScientist.svelte';
+import InterstellarBlackHole from './InterstellarBlackHole.svelte';
+import InterstellarTimeDilation from './InterstellarTimeDilation.svelte';
+import InterstellarTidalForces from './InterstellarTidalForces.svelte';
+import InterstellarWormhole from './InterstellarWormhole.svelte';
+import InterstellarTesseract from './InterstellarTesseract.svelte';
+import InterstellarPlanets from './InterstellarPlanets.svelte';
 
 type AnyComponent = ComponentType<SvelteComponent>;
 
@@ -32,6 +38,14 @@ const registry: Record<string, Record<string, AnyComponent>> = {
     grace:             GraceBiology      as AnyComponent,
     'stratts-decision': StrattsDecision  as AnyComponent,
     'grace-scientist': GraceScientist    as AnyComponent
+  },
+  'interstellar': {
+    'black-hole':    InterstellarBlackHole    as AnyComponent,
+    'time-dilation': InterstellarTimeDilation as AnyComponent,
+    'tidal-forces':  InterstellarTidalForces  as AnyComponent,
+    'wormhole':      InterstellarWormhole     as AnyComponent,
+    'tesseract':     InterstellarTesseract    as AnyComponent,
+    'planets':       InterstellarPlanets      as AnyComponent
   }
 };
 

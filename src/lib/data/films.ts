@@ -157,10 +157,96 @@ const interstellar: Film = {
   title: 'Interstellar',
   year: 2014,
   author: 'Christopher Nolan',
-  status: 'coming-soon',
-  tagline: '',
-  concepts: ['General Relativity', 'Black Holes', 'Time Dilation'],
-  sections: []
+  status: 'available',
+  tagline: 'A black hole built with Nobel-Prize physics. Time dilation you can calculate. Science Nolan built with Kip Thorne.',
+  concepts: ['General Relativity', 'Black Holes', 'Gravitational Lensing', 'Wormholes'],
+  sections: [
+    {
+      label: 'Gargantua',
+      chapters: [
+        {
+          id: 'black-hole',
+          shortLabel: 'Black Hole',
+          label: 'Gargantua: The Black Hole',
+          icon: '◉',
+          intro: 'Gargantua is 100 million solar masses, spinning at near-maximum rate. Physicist Kip Thorne derived the correct equations for its visual appearance — and the rendering was accurate enough to produce two unexpected scientific papers. Click each element of the black hole to explore the physics behind it.',
+          stats: [
+            { label: 'Mass',            value: '100M M☉',      sub: 'solar masses' },
+            { label: 'Spin',            value: '~0.99998',      sub: 'near-maximal Kerr' },
+            { label: 'Schwarzschild r', value: '~2 AU',         sub: "wider than Earth's orbit" }
+          ]
+        },
+        {
+          id: 'time-dilation',
+          shortLabel: 'Time Dilation',
+          label: "Miller's Planet: Time Dilation",
+          icon: '⧖',
+          intro: "Every hour on Miller's planet, seven years pass on Earth. This isn't dramatic licence — it's a direct consequence of Einstein's general relativity. Drag the proximity slider to watch the clock disparity explode as you approach Gargantua's event horizon.",
+          stats: [
+            { label: 'Dilation factor',  value: '61,320×',     sub: "on Miller's planet" },
+            { label: 'Mission duration', value: '23 yrs',       sub: 'Earth time for 1 hr visit' },
+            { label: 'Formula',          value: '1/√(1−rₛ/r)', sub: 'Schwarzschild metric' }
+          ]
+        },
+        {
+          id: 'tidal-forces',
+          shortLabel: 'Tidal Forces',
+          label: 'The Waves: Tidal Forces',
+          icon: '〰',
+          intro: "Miller's planet has kilometre-tall waves — not from storms but from tidal forces. Gargantua's gravity pulls harder on the near side of the planet than the far side, creating permanent stationary bulges. The crew drove through them. Explore how tidal forces scale with distance.",
+          stats: [
+            { label: 'Wave height',   value: '~1.2 km',  sub: "Kip Thorne's calculation" },
+            { label: 'Force law',     value: 'F ∝ 1/r³', sub: 'steeper than gravity' },
+            { label: 'Largest Earth', value: '524 m',    sub: 'Lituya Bay, 1958' }
+          ]
+        }
+      ]
+    },
+    {
+      label: 'Space-Time',
+      chapters: [
+        {
+          id: 'wormhole',
+          shortLabel: 'Wormhole',
+          label: 'The Wormhole Near Saturn',
+          icon: '⊙',
+          intro: "The wormhole in Interstellar is a sphere, not a ring — the first scientifically accurate depiction in cinema. A wormhole is a tunnel in three-dimensional space, and its mouth is necessarily spherical. Looking through it, you'd see distorted stars from the other side. Explore the physics of Einstein-Rosen bridges.",
+          note: {
+            label: 'Why a Sphere?',
+            text: "A 2D wormhole (a tunnel in a flat plane) would have a circular mouth. Extending to 3D space, the mouth must be spherical. Every previous sci-fi film got this wrong. Thorne insisted Nolan get it right."
+          }
+        },
+        {
+          id: 'tesseract',
+          shortLabel: 'Tesseract',
+          label: 'The Tesseract & Higher Dimensions',
+          icon: '⬡',
+          intro: "The film's climax places Cooper inside a five-dimensional structure where time is a spatial dimension he can physically traverse. Explore how dimensions build on each other — from a line to a plane to 3D space to Einstein's 4D spacetime to the fifth dimension the bulk beings inhabit.",
+          note: {
+            label: 'The Block Universe',
+            text: "Einstein's relativity implies that past, present, and future all coexist in a four-dimensional block. The 'bulk beings' exist in five dimensions — they can step through time the way we step across a room."
+          }
+        }
+      ]
+    },
+    {
+      label: 'The Target Worlds',
+      chapters: [
+        {
+          id: 'planets',
+          shortLabel: 'Three Planets',
+          label: "Miller, Mann & Edmunds' Worlds",
+          icon: '◌',
+          intro: "The Lazarus missions surveyed twelve worlds beyond the wormhole. Three sent back promising signals. Each is a case study in how physics, orbital mechanics, and proximity to a supermassive black hole create entirely alien environments — and entirely different fates.",
+          stats: [
+            { label: "Miller — viable?",  value: 'No',  sub: 'Tidal waves, extreme dilation' },
+            { label: "Mann — viable?",    value: 'No',  sub: 'Data was faked' },
+            { label: "Edmunds — viable?", value: 'Yes', sub: "Brand's destination" }
+          ]
+        }
+      ]
+    }
+  ]
 };
 
 const theMartian: Film = {
