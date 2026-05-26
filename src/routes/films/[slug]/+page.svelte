@@ -28,35 +28,57 @@
   function goNext() { if (currentIdx < allChapters.length - 1) goTo(allChapters[currentIdx + 1].id); }
   function goPrev() { if (currentIdx > 0) goTo(allChapters[currentIdx - 1].id); }
 
-  // Pointer-based swipe (works for touch and mouse drag)
+  // Pointer-based swipe — only triggers on clearly horizontal gestures
   let pointerStartX = 0;
+  let pointerStartY = 0;
   let pointerDelta = 0;
   let swiping = false;
+  let swipeAxis: 'h' | 'v' | null = null; // determined after first meaningful move
 
   function onPointerDown(e: PointerEvent) {
     pointerStartX = e.clientX;
+    pointerStartY = e.clientY;
     pointerDelta = 0;
     swiping = true;
+    swipeAxis = null;
     (e.currentTarget as HTMLElement).setPointerCapture(e.pointerId);
   }
   function onPointerMove(e: PointerEvent) {
     if (!swiping) return;
-    pointerDelta = e.clientX - pointerStartX;
+    const dx = e.clientX - pointerStartX;
+    const dy = e.clientY - pointerStartY;
+    // Lock axis once movement passes 8px
+    if (!swipeAxis && (Math.abs(dx) > 8 || Math.abs(dy) > 8)) {
+      swipeAxis = Math.abs(dx) > Math.abs(dy) ? 'h' : 'v';
+    }
+    if (swipeAxis === 'h') {
+      pointerDelta = dx;
+      e.preventDefault(); // prevent page scroll only when swiping horizontally
+    }
   }
   function onPointerUp(e: PointerEvent) {
     if (!swiping) return;
     swiping = false;
-    const delta = e.clientX - pointerStartX;
-    if (Math.abs(delta) > 48) {
-      if (delta < 0) goNext(); else goPrev();
+    const dx = e.clientX - pointerStartX;
+    const dy = e.clientY - pointerStartY;
+    // Only navigate if the gesture was horizontal and horizontal dominates
+    if (swipeAxis === 'h' && Math.abs(dx) > 48 && Math.abs(dx) > Math.abs(dy) * 1.5) {
+      if (dx < 0) goNext(); else goPrev();
     }
     pointerDelta = 0;
+    swipeAxis = null;
   }
 
   // Keyboard nav
   function onKeydown(e: KeyboardEvent) {
     if (e.key === 'ArrowRight') goNext();
     else if (e.key === 'ArrowLeft') goPrev();
+  }
+
+  // Svelte action: attaches pointermove as non-passive so preventDefault() blocks scroll
+  function nonPassiveMove(node: HTMLElement) {
+    node.addEventListener('pointermove', onPointerMove, { passive: false });
+    return { destroy() { node.removeEventListener('pointermove', onPointerMove); } };
   }
 </script>
 
@@ -175,11 +197,11 @@
       <!-- Card with swipe -->
       <!-- svelte-ignore a11y-no-static-element-interactions -->
       <div class="relative overflow-hidden rounded-2xl"
+        use:nonPassiveMove
         on:pointerdown={onPointerDown}
-        on:pointermove={onPointerMove}
         on:pointerup={onPointerUp}
         on:pointercancel={onPointerUp}
-        style="touch-action: pan-y; cursor: {swiping ? 'grabbing' : 'grab'}">
+        style="touch-action: pan-y; cursor: {swiping && swipeAxis === 'h' ? 'grabbing' : 'default'}">
 
         {#key activeChapterId}
           <div
