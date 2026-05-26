@@ -174,7 +174,18 @@ const theMartian: Film = {
   sections: []
 };
 
-export const films: Film[] = [projectHailMary, interstellar, theMartian];
+const spiderMan: Film = {
+  slug: 'spider-man',
+  title: 'Spider-Man',
+  year: 2002,
+  author: 'Sam Raimi',
+  status: 'coming-soon',
+  tagline: 'One radioactive bite. The real science of what it would actually do.',
+  concepts: ['Genetic Mutation', 'Arachnology', 'Adhesion Physics', 'Biomechanics'],
+  sections: []
+};
+
+export const films: Film[] = [projectHailMary, interstellar, theMartian, spiderMan];
 
 export function getFilm(slug: string): Film | undefined {
   return films.find(f => f.slug === slug);
