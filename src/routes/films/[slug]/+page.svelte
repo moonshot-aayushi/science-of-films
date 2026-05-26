@@ -41,7 +41,9 @@
     pointerDelta = 0;
     swiping = true;
     swipeAxis = null;
-    (e.currentTarget as HTMLElement).setPointerCapture(e.pointerId);
+    // Don't capture the pointer here — a tap must reach child elements (SVG
+    // click regions, buttons, sliders). We only capture once we're sure the
+    // gesture is a horizontal swipe (see onPointerMove below).
   }
   function onPointerMove(e: PointerEvent) {
     if (!swiping) return;
@@ -50,6 +52,11 @@
     // Lock axis once movement passes 8px
     if (!swipeAxis && (Math.abs(dx) > 8 || Math.abs(dy) > 8)) {
       swipeAxis = Math.abs(dx) > Math.abs(dy) ? 'h' : 'v';
+      // Only capture for horizontal swipes — this keeps the pointer tracked
+      // even if it leaves the card, without breaking child element clicks.
+      if (swipeAxis === 'h') {
+        (e.currentTarget as HTMLElement).setPointerCapture(e.pointerId);
+      }
     }
     if (swipeAxis === 'h') {
       pointerDelta = dx;
