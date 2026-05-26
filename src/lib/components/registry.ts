@@ -21,6 +21,7 @@ import InterstellarTidalForces from './InterstellarTidalForces.svelte';
 import InterstellarWormhole from './InterstellarWormhole.svelte';
 import InterstellarTesseract from './InterstellarTesseract.svelte';
 import InterstellarPlanets from './InterstellarPlanets.svelte';
+import InterstellarCentrifuge from './InterstellarCentrifuge.svelte';
 
 type AnyComponent = ComponentType<SvelteComponent>;
 
@@ -45,7 +46,8 @@ const registry: Record<string, Record<string, AnyComponent>> = {
     'tidal-forces':  InterstellarTidalForces  as AnyComponent,
     'wormhole':      InterstellarWormhole     as AnyComponent,
     'tesseract':     InterstellarTesseract    as AnyComponent,
-    'planets':       InterstellarPlanets      as AnyComponent
+    'planets':       InterstellarPlanets      as AnyComponent,
+    'centrifuge':    InterstellarCentrifuge   as AnyComponent
   }
 };
 

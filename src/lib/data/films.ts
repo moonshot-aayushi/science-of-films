@@ -245,6 +245,23 @@ const interstellar: Film = {
           ]
         }
       ]
+    },
+    {
+      label: 'The Endurance',
+      chapters: [
+        {
+          id: 'centrifuge',
+          shortLabel: 'Centrifuge',
+          label: 'Artificial Gravity: The Rotating Ring',
+          icon: '⊛',
+          intro: "The Endurance uses a rotating habitat ring to simulate gravity through centrifugal force. Spin fast enough and the floor pushes up — indistinguishable from real gravity. But spin too fast and the Coriolis effect makes simply turning your head cause vertigo. Dial in radius and RPM to find the sweet spot.",
+          stats: [
+            { label: 'Endurance radius', value: '~45 m',   sub: 'estimated from film' },
+            { label: 'Target RPM',       value: '~3.7',    sub: 'to achieve 1g at 45m' },
+            { label: 'Comfort limit',    value: '≤3 RPM',  sub: 'above this: Coriolis sickness' }
+          ]
+        }
+      ]
     }
   ]
 };
