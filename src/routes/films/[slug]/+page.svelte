@@ -103,27 +103,89 @@
 
     <div class="flex flex-col sm:flex-row gap-8 items-start">
       <div class="flex-shrink-0 relative">
-        <div class="absolute inset-0 rounded-full bg-astrophage/20 blur-2xl animate-pulse-slow"></div>
-        <svg width="112" height="112" viewBox="0 0 128 128" class="relative animate-float">
-          <defs>
-            <radialGradient id="heroOrb" cx="42%" cy="38%" r="60%">
-              <stop offset="0%" stop-color="#FFD080" stop-opacity="0.9"/>
-              <stop offset="55%" stop-color="#F5A623" stop-opacity="0.7"/>
-              <stop offset="100%" stop-color="#C07C0A" stop-opacity="0.2"/>
-            </radialGradient>
-            <filter id="heroGlow">
-              <feGaussianBlur stdDeviation="5" result="b"/>
-              <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-            </filter>
-          </defs>
-          <ellipse cx="64" cy="64" rx="46" ry="39" fill="url(#heroOrb)" filter="url(#heroGlow)"/>
-          <ellipse cx="64" cy="64" rx="46" ry="39" fill="none" stroke="#F5A623" stroke-width="1.5" opacity="0.7"/>
-          {#each Array.from({length: 16}, (_, i) => i) as i}
-            <circle cx={64 + 45 * Math.cos((i/16)*Math.PI*2)} cy={64 + 38 * Math.sin((i/16)*Math.PI*2)} r="3" fill="#F5A623" opacity="0.75"/>
-          {/each}
-          <circle cx="64" cy="64" r="13" fill="#C07C0A" opacity="0.7"/>
-          <circle cx="64" cy="64" r="6" fill="#FFD080" filter="url(#heroGlow)"/>
-        </svg>
+        {#if film.slug === 'interstellar'}
+          <!-- Gargantua black hole hero -->
+          <div class="absolute inset-0 rounded-full bg-amber-400/10 blur-2xl animate-pulse-slow"></div>
+          <svg width="112" height="112" viewBox="0 0 128 128" class="relative animate-float">
+            <defs>
+              <radialGradient id="heroBHHalo" cx="50%" cy="50%" r="50%">
+                <stop offset="55%"  stop-color="#000000"  stop-opacity="0"/>
+                <stop offset="85%"  stop-color="#F5A623"  stop-opacity="0.12"/>
+                <stop offset="100%" stop-color="#FFD080"  stop-opacity="0.30"/>
+              </radialGradient>
+              <radialGradient id="heroBHDisk" cx="22%" cy="50%" r="78%">
+                <stop offset="0%"   stop-color="#FFFFFF"  stop-opacity="0.95"/>
+                <stop offset="35%"  stop-color="#FFD080"  stop-opacity="0.85"/>
+                <stop offset="100%" stop-color="#C07C0A"  stop-opacity="0.05"/>
+              </radialGradient>
+              <filter id="heroBHGlow">
+                <feGaussianBlur stdDeviation="2.5" result="b"/>
+                <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+              <clipPath id="heroDiskFront">
+                <rect x="0" y="64" width="128" height="64"/>
+              </clipPath>
+              <clipPath id="heroDiskBack">
+                <rect x="0" y="0" width="128" height="64"/>
+              </clipPath>
+            </defs>
+            <!-- Stars -->
+            {#each Array.from({length: 22}, (_, i) => i) as i}
+              <circle
+                cx={((Math.sin(i * 2.399) + 1) / 2) * 128}
+                cy={((Math.cos(i * 1.701) + 1) / 2) * 128}
+                r={i % 5 === 0 ? 1.4 : 0.7}
+                fill="white" opacity={0.12 + (i % 6) * 0.06}/>
+            {/each}
+            <!-- Ambient halo -->
+            <circle cx="64" cy="64" r="56" fill="url(#heroBHHalo)"/>
+            <!-- Lensing ring hint -->
+            <circle cx="64" cy="64" r="35" fill="none" stroke="#F5A623" stroke-width="0.6" opacity="0.2"/>
+            <!-- Disk — back half (dim) -->
+            <g clip-path="url(#heroDiskBack)">
+              <ellipse cx="64" cy="64" rx="46" ry="11"
+                fill="url(#heroBHDisk)" fill-opacity="0.22"
+                stroke="#F5A623" stroke-width="1.8" stroke-opacity="0.28"/>
+            </g>
+            <!-- Event horizon -->
+            <circle cx="64" cy="64" r="23" fill="#000000"/>
+            <!-- Disk — front half (bright) -->
+            <g clip-path="url(#heroDiskFront)">
+              <ellipse cx="64" cy="64" rx="46" ry="11"
+                fill="url(#heroBHDisk)" fill-opacity="0.72"
+                stroke="#FFD080" stroke-width="3" stroke-opacity="0.9"
+                filter="url(#heroBHGlow)"/>
+            </g>
+            <!-- Photon ring -->
+            <circle cx="64" cy="64" r="25" fill="none"
+              stroke="#FFD080" stroke-width="1.2" stroke-opacity="0.8"
+              filter="url(#heroBHGlow)"/>
+          </svg>
+
+        {:else}
+          <!-- Astrophage star hero (Project Hail Mary + default) -->
+          <div class="absolute inset-0 rounded-full bg-astrophage/20 blur-2xl animate-pulse-slow"></div>
+          <svg width="112" height="112" viewBox="0 0 128 128" class="relative animate-float">
+            <defs>
+              <radialGradient id="heroOrb" cx="42%" cy="38%" r="60%">
+                <stop offset="0%" stop-color="#FFD080" stop-opacity="0.9"/>
+                <stop offset="55%" stop-color="#F5A623" stop-opacity="0.7"/>
+                <stop offset="100%" stop-color="#C07C0A" stop-opacity="0.2"/>
+              </radialGradient>
+              <filter id="heroGlow">
+                <feGaussianBlur stdDeviation="5" result="b"/>
+                <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+            </defs>
+            <ellipse cx="64" cy="64" rx="46" ry="39" fill="url(#heroOrb)" filter="url(#heroGlow)"/>
+            <ellipse cx="64" cy="64" rx="46" ry="39" fill="none" stroke="#F5A623" stroke-width="1.5" opacity="0.7"/>
+            {#each Array.from({length: 16}, (_, i) => i) as i}
+              <circle cx={64 + 45 * Math.cos((i/16)*Math.PI*2)} cy={64 + 38 * Math.sin((i/16)*Math.PI*2)} r="3" fill="#F5A623" opacity="0.75"/>
+            {/each}
+            <circle cx="64" cy="64" r="13" fill="#C07C0A" opacity="0.7"/>
+            <circle cx="64" cy="64" r="6" fill="#FFD080" filter="url(#heroGlow)"/>
+          </svg>
+        {/if}
       </div>
 
       <div>
