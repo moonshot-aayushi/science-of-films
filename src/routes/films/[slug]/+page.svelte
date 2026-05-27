@@ -15,7 +15,7 @@
   $: activeChapter = allChapters.find(c => c.id === activeChapterId) ?? allChapters[0];
   $: currentIdx = allChapters.findIndex(c => c.id === activeChapterId);
   $: activeComponent = components[activeChapterId] ?? null;
-  $: statCols = activeChapter?.stats?.length === 2 ? 'grid-cols-2' : 'grid-cols-3';
+  $: statCols = activeChapter?.stats?.length === 2 ? 'grid-cols-2' : 'grid-cols-1 sm:grid-cols-3';
 
   // Swipe / slide direction
   let dir: 1 | -1 = 1; // 1 = forward (slide left), -1 = back (slide right)
@@ -298,10 +298,12 @@
               {#if activeChapter.stats?.length}
                 <div class="mt-7 grid {statCols} gap-4">
                   {#each activeChapter.stats as stat}
-                    <div class="bg-black/20 border border-white/6 rounded-xl p-4 text-center">
-                      <p class="text-xs font-mono text-starlight/30 uppercase tracking-wider mb-1">{stat.label}</p>
-                      <p class="text-xl font-bold text-astrophage mb-0.5">{stat.value}</p>
-                      <p class="text-xs text-starlight/35">{stat.sub}</p>
+                    <div class="bg-black/20 border border-white/6 rounded-xl p-4 sm:text-center flex sm:block items-center gap-4">
+                      <p class="text-xs font-mono text-starlight/30 uppercase tracking-wide mb-0 sm:mb-1 w-28 sm:w-auto flex-shrink-0">{stat.label}</p>
+                      <div class="flex-1 sm:block">
+                        <p class="text-lg sm:text-xl font-bold text-astrophage mb-0 sm:mb-0.5">{stat.value}</p>
+                        <p class="text-xs text-starlight/35">{stat.sub}</p>
+                      </div>
                     </div>
                   {/each}
                 </div>
