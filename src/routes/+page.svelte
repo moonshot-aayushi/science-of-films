@@ -26,7 +26,7 @@
 </section>
 
 <!-- Films -->
-<section class="max-w-6xl mx-auto px-6 py-20">
+<section class="max-w-[1400px] mx-auto px-6 py-20">
   <div class="flex items-center gap-4 mb-12">
     <h2 class="text-sm font-mono text-starlight/40 tracking-widest uppercase">Featured Films</h2>
     <div class="flex-1 h-px bg-white/5"></div>

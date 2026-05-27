@@ -100,7 +100,7 @@
   <div class="absolute inset-0 bg-gradient-to-b from-void/60 via-void/80 to-void pointer-events-none"></div>
   <div class="absolute top-1/2 left-1/4 -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full bg-astrophage/5 blur-3xl pointer-events-none"></div>
 
-  <div class="relative z-10 max-w-6xl mx-auto px-6 py-16 sm:py-20">
+  <div class="relative z-10 max-w-[1400px] mx-auto px-6 py-16 sm:py-20">
     <a href="/" class="inline-flex items-center gap-2 text-starlight/40 text-sm hover:text-astrophage transition-colors mb-8">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
         <path d="M19 12H5M12 19l-7-7 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
@@ -219,7 +219,7 @@
 </section>
 
 <!-- Explorer -->
-<div class="max-w-6xl mx-auto px-4 sm:px-6 py-10">
+<div class="max-w-[1400px] mx-auto px-4 sm:px-6 py-10">
   <div class="flex flex-col lg:flex-row gap-8">
 
     <!-- Sidebar — desktop only -->
