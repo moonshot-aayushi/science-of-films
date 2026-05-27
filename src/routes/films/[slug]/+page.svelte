@@ -265,13 +265,15 @@
 
       <!-- Card with swipe -->
       <!-- svelte-ignore a11y-no-static-element-interactions -->
-      <div class="relative overflow-hidden rounded-2xl"
+      <div class="relative"
         use:nonPassiveMove
         on:pointerdown={onPointerDown}
         on:pointerup={onPointerUp}
         on:pointercancel={onPointerUp}
         style="touch-action: pan-y; cursor: {swiping && swipeAxis === 'h' ? 'grabbing' : 'default'}">
 
+        <!-- overflow-hidden on inner wrapper only, so arrows can stick outside -->
+        <div class="overflow-hidden rounded-2xl">
         {#key activeChapterId}
           <div
             in:fly={{ x: dir * 80, duration: 240, opacity: 0 }}
@@ -322,25 +324,28 @@
 
           </div>
         {/key}
+        </div>
 
-        <!-- Left arrow (desktop hover) -->
+        <!-- Left arrow — outside overflow-hidden so it renders fully -->
         {#if currentIdx > 0}
           <button on:click|stopPropagation={goPrev}
             class="hidden lg:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2
-              w-10 h-10 rounded-full bg-deep-space border border-white/12 items-center justify-center
-              text-starlight/40 hover:text-astrophage hover:border-astrophage/40 transition-all shadow-lg z-10">
+              w-11 h-11 rounded-full bg-deep-space/95 border border-white/30 items-center justify-center
+              text-starlight/65 hover:text-astrophage hover:border-astrophage/50 hover:bg-astrophage/8
+              transition-all shadow-xl z-10">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-              <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
             </svg>
           </button>
         {/if}
         {#if currentIdx < allChapters.length - 1}
           <button on:click|stopPropagation={goNext}
             class="hidden lg:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2
-              w-10 h-10 rounded-full bg-deep-space border border-white/12 items-center justify-center
-              text-starlight/40 hover:text-astrophage hover:border-astrophage/40 transition-all shadow-lg z-10">
+              w-11 h-11 rounded-full bg-deep-space/95 border border-white/30 items-center justify-center
+              text-starlight/65 hover:text-astrophage hover:border-astrophage/50 hover:bg-astrophage/8
+              transition-all shadow-xl z-10">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-              <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
             </svg>
           </button>
         {/if}

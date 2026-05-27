@@ -94,8 +94,10 @@
           on:click={() => proximity = ref.prox}
           class="absolute -translate-x-1/2 flex flex-col items-center gap-0.5"
           style="left: {ref.prox}%">
-          <div class="w-px h-2 bg-white/20"></div>
-          <span class="text-[9px] font-mono text-starlight/30 whitespace-nowrap">{ref.label}</span>
+          <div class="w-px h-2 bg-white/25"></div>
+          <!-- Show all labels on desktop; only the two extremes on mobile -->
+          <span class="text-[9px] font-mono text-starlight/35 whitespace-nowrap
+            {ref.prox === 0 || ref.prox === 100 ? '' : 'hidden sm:inline'}">{ref.label}</span>
         </button>
       {/each}
     </div>
