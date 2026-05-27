@@ -36,7 +36,7 @@
       age: '~5.8 Gyr',
       metal: '0.3× Solar',
       color: '#F5A623',
-      detail: 'Older, cooler, and metal-poor compared to our Sun. Its low metallicity — 30% of solar — may be the key factor enabling Taumoeba to evolve there. Fewer heavy elements means different chemistry, different ecological niches, different predators for Astrophage.'
+      detail: 'Older, cooler, and metal-poor compared to our Sun. Its low metallicity (30% of solar) may be the key factor enabling Taumoeba to evolve there. Fewer heavy elements means different chemistry, different ecological niches, different predators for Astrophage.'
     }
   } as const;
 

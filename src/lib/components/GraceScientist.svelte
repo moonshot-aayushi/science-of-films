@@ -10,16 +10,16 @@
       label: 'Confirmation',
       shortLabel: 'Exp 01',
       title: 'Is It Alive?',
-      date: 'Day 3 — Initial Isolation',
+      date: 'Day 3: Initial Isolation',
       hypothesis: 'The dimming substance is organic and self-replicating, not a chemical deposit.',
       method: 'Isolated a 1 mg sample from Petrova-line rock scrapings. Placed under modified phase-contrast microscope. Observed at 3-hour intervals across 24 hours.',
       finding: 'The sample doubled in mass within 6 hours under 585 nm light exposure. Cell division confirmed at 40× magnification. It is alive.',
-      significance: 'Confirms the solar dimming is biological in origin — not a dust cloud, comet, or chemical film. The threat is an organism.',
+      significance: 'Confirms the solar dimming is biological in origin, not a dust cloud, comet, or chemical film. The threat is an organism.',
       notebook: [
         { time: '00:00', note: 'Sample mass: 1.000 mg. No visible activity.' },
         { time: '03:00', note: 'Slight turbidity under 585nm lamp. Mass: 1.021 mg.' },
         { time: '06:00', note: 'Clear doubling pattern. Mass: 2.017 mg. Division confirmed.' },
-        { time: '24:00', note: 'Exponential growth arrested at 8.2 mg — resource-limited.' }
+        { time: '24:00', note: 'Exponential growth arrested at 8.2 mg (resource-limited).' }
       ],
       svg: 'division'
     },
@@ -28,11 +28,11 @@
       label: 'Petrova Peak',
       shortLabel: 'Exp 02',
       title: 'Finding 585 nm',
-      date: 'Day 7 — Spectral Analysis',
+      date: 'Day 7: Spectral Analysis',
       hypothesis: 'Astrophage metabolizes photons at a specific wavelength, which should correspond to the spectral line missing from dimmed stars.',
       method: 'Exposed isolated colonies to a swept monochromatic light source, 400–750 nm, in 1 nm increments. Measured mass gain at each wavelength after 30 minutes.',
       finding: 'A sharp absorption peak at exactly 585.5 nm. Growth rate 12× higher at this wavelength than any other tested. Below 560 nm and above 610 nm: essentially inert.',
-      significance: 'The 585 nm "Petrova line" — named for Irina Petrova who first noticed the dimming — is the direct signature of Astrophage feeding. It is how we detect them from Earth.',
+      significance: 'The 585 nm "Petrova line" (named for Irina Petrova who first noticed the dimming) is the direct signature of Astrophage feeding. It is how we detect them from Earth.',
       notebook: [
         { time: '400–560 nm', note: 'Negligible mass gain (< 0.3 mg/hr). No resonance.' },
         { time: '570–582 nm', note: 'Rising growth curve. Approaching resonance.' },
@@ -46,7 +46,7 @@
       label: 'Mass-Energy',
       shortLabel: 'Exp 03',
       title: 'One Petajoule Per Gram',
-      date: 'Day 12 — Calorimetry',
+      date: 'Day 12: Calorimetry',
       hypothesis: 'If Astrophage can accelerate a ship to 0.92c, the energy density must far exceed chemical reactions and even fission.',
       method: 'Destroyed a precisely-weighed 1 mg sample using high-voltage discharge in a calorimetric chamber. Measured total energy release. Repeated 12 times for statistical validity.',
       finding: '1 mg of Astrophage releases exactly 1 petajoule (10¹⁵ J) upon destruction. This is ~170× the Hiroshima bomb per gram. Approximately E = mc² efficiency (matter-antimatter equivalent).',
@@ -64,15 +64,15 @@
       label: 'Taumoeba',
       shortLabel: 'Exp 04',
       title: 'The Predator Discovery',
-      date: 'Day 41 — Tau Ceti e Sample',
+      date: 'Day 41: Tau Ceti e Sample',
       hypothesis: 'If Tau Ceti is dimming less than expected, something at that star may be consuming or killing Astrophage.',
       method: 'Rocky provided atmospheric gas samples collected near Tau Ceti e during its survey missions. Grace cultured Astrophage colonies, then introduced Tau Ceti e atmospheric extract.',
-      finding: 'Astrophage colonies died within 4 hours of contact with the Tau Ceti e sample. Microscopy revealed a second microorganism — smaller, faster-dividing — actively lysing Astrophage cells. Named: Taumoeba.',
+      finding: 'Astrophage colonies died within 4 hours of contact with the Tau Ceti e sample. Microscopy revealed a second microorganism (smaller, faster-dividing) actively lysing Astrophage cells. Named: Taumoeba.',
       significance: 'The solution to Earth\'s extinction exists in biology, not engineering. A predator-prey relationship already established at Tau Ceti can be exported back to our solar system.',
       notebook: [
         { time: '00:00', note: 'Healthy Astrophage colony introduced to Tau Ceti e extract.' },
         { time: '01:00', note: 'Unusual clearing pattern forming at extract interface.' },
-        { time: '02:30', note: 'Visible die-off. Second organism at 400× — it\'s eating them.' },
+        { time: '02:30', note: 'Visible die-off. Second organism at 400x. It\'s eating them.' },
         { time: '04:00', note: 'Colony 98% dead. Taumoeba thriving. This is the answer.' }
       ],
       svg: 'predator'
@@ -82,15 +82,15 @@
       label: 'Evolution',
       shortLabel: 'Exp 05',
       title: 'Breeding for Temperature',
-      date: 'Days 52–71 — Directed Evolution',
+      date: 'Days 52–71: Directed Evolution',
       hypothesis: 'Taumoeba evolved at Tau Ceti e (circa 40°C) but must survive at 150°C+ to thrive near Earth\'s sun. Directed selection can achieve this in accelerated lab generations.',
       method: 'Cultured Taumoeba across generations while gradually raising temperature 1°C per generation. Selected only the survivors at each step to continue the line. Used Rocky\'s DNA synthesis equipment to accelerate mutation rate.',
-      finding: 'After 500 generations over 19 days, a heat-tolerant strain survived at 152°C — above the minimum threshold needed to survive in Earth\'s solar corona. Mission-viable.',
-      significance: 'Proves that a biologically engineered solution is deliverable within the mission timeline. Grace doesn\'t bring technology home — he brings life.',
+      finding: 'After 500 generations over 19 days, a heat-tolerant strain survived at 152°C, above the minimum threshold needed to survive in Earth\'s solar corona. Mission-viable.',
+      significance: 'Proves that a biologically engineered solution is deliverable within the mission timeline. Grace doesn\'t bring technology home. He brings life.',
       notebook: [
         { time: 'Gen 1–100', note: '40°C → 80°C. Normal selection pressure, ~30% survival.' },
         { time: 'Gen 100–300', note: '80°C → 120°C. Added chemical mutagens. 12% survival/gen.' },
-        { time: 'Gen 300–450', note: '120°C → 145°C. Critical phase — 6 total colony extinctions.' },
+        { time: 'Gen 300–450', note: '120°C → 145°C. Critical phase: 6 total colony extinctions.' },
         { time: 'Gen 500', note: '152°C survival confirmed. Heat-shock proteins radically upregulated.' }
       ],
       svg: 'evolution'
@@ -213,7 +213,7 @@
               {item.joules >= 1e12 ? (item.joules / 1e15).toFixed(0) + ' PJ' : item.joules >= 1e9 ? (item.joules / 1e9).toFixed(0) + ' GJ' : item.joules + ' J'}
             </text>
           {/each}
-          <text x="240" y="148" text-anchor="middle" font-size="8" font-family="Inter" fill="#E8EDF220">Log scale — each step is 10×</text>
+          <text x="240" y="148" text-anchor="middle" font-size="8" font-family="Inter" fill="#E8EDF220">Log scale: each step is 10×</text>
         </svg>
 
       {:else if exp.svg === 'predator'}
@@ -242,7 +242,7 @@
           <text x="120" y="125" text-anchor="middle" font-size="9" font-family="Inter" fill="#F5A62360">Astrophage colony</text>
           <text x="245" y="115" text-anchor="middle" font-size="9" font-family="Inter" fill="#00D4FF80">Taumoeba</text>
           <text x="355" y="115" text-anchor="middle" font-size="9" font-family="Inter" fill="#E8EDF225">Dead cells</text>
-          <text x="240" y="148" text-anchor="middle" font-size="8" font-family="Inter" fill="#E8EDF220">Taumoeba lysing Astrophage cells — 4 hrs post-contact</text>
+          <text x="240" y="148" text-anchor="middle" font-size="8" font-family="Inter" fill="#E8EDF220">Taumoeba lysing Astrophage cells, 4 hrs post-contact</text>
         </svg>
 
       {:else if exp.svg === 'evolution'}
@@ -297,7 +297,7 @@
   <div class="bg-deep-space border border-white/8 rounded-xl overflow-hidden">
     <div class="px-5 py-3 border-b border-white/5 flex items-center gap-2">
       <span class="text-[10px] font-mono text-starlight/30 uppercase tracking-widest">Lab Notebook</span>
-      <span class="text-[10px] font-mono text-starlight/15">— Grace's raw observations</span>
+      <span class="text-[10px] font-mono text-starlight/15">· Grace's raw observations</span>
     </div>
     <div class="divide-y divide-white/4">
       {#each exp.notebook as entry}

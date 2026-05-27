@@ -16,8 +16,8 @@
         { label: 'Time dilation', value: '61,320×',  note: '1 hour = 7 years' },
         { label: 'Wave height',   value: '~1.2 km',  note: 'Tidal forcing by Gargantua' }
       ],
-      outcome: 'Dr. Miller died before the Endurance arrived. The crew spent 1 hour on the surface — during which 23 years passed on Earth. They found only debris. No data worth the cost.',
-      science: 'Tidally locked to Gargantua. The wave pattern is stationary — a permanent bulge held by tidal forces. The crew "drove into" the wave. The planet is drenched in young-looking blue-shifted light from Gargantua.'
+      outcome: 'Dr. Miller died before the Endurance arrived. The crew spent 1 hour on the surface (during which 23 years passed on Earth). They found only debris. No data worth the cost.',
+      science: 'Tidally locked to Gargantua. The wave pattern is stationary: a permanent bulge held by tidal forces. The crew "drove into" the wave. The planet is drenched in young-looking blue-shifted light from Gargantua.'
     },
     {
       id: 'mann',
@@ -33,8 +33,8 @@
         { label: 'Horizon',     value: 'Cloud deck', note: 'Looks like solid ground' },
         { label: 'Data',        value: 'Faked',      note: 'Mann falsified all readings' }
       ],
-      outcome: "Dr. Mann fabricated his data to ensure rescue. He faked survivability readings to get the crew to come. He tried to kill Cooper and detached from the Endurance improperly — killing himself in the airlock explosion. The planet was never habitable.",
-      science: "The 'ground' seen from orbit is actually a thick deck of frozen ammonia clouds, not a solid surface. Mann chose a planet with cloud cover that looked Earth-like from above — a deliberate deception. The actual surface below is frozen and lethal."
+      outcome: "Dr. Mann fabricated his data to ensure rescue. He faked survivability readings to get the crew to come. He tried to kill Cooper and detached from the Endurance improperly, killing himself in the airlock explosion. The planet was never habitable.",
+      science: "The 'ground' seen from orbit is actually a thick deck of frozen ammonia clouds, not a solid surface. Mann chose a planet with cloud cover that looked Earth-like from above. A deliberate deception. The actual surface below is frozen and lethal."
     },
     {
       id: 'edmunds',
@@ -50,8 +50,8 @@
         { label: 'Surface',    value: 'Rocky',   note: 'Solid, stable terrain' },
         { label: 'Data',       value: 'Real',    note: 'Edmunds died telling the truth' }
       ],
-      outcome: "Dr. Edmunds sent accurate data and died waiting. Brand reaches the planet at the film's end and finds Edmunds' body. She begins building the first human settlement there — fulfilling Plan B (colonization using frozen embryos), alone, with CASE.",
-      science: "Edmunds' planet is furthest from Gargantua — less tidal distortion, Earth-like gravity, stable orbit. Its location makes it the least dramatic and least scientifically extreme of the three worlds, which is exactly why it's the one that works."
+      outcome: "Dr. Edmunds sent accurate data and died waiting. Brand reaches the planet at the film's end and finds Edmunds' body. She begins building the first human settlement there, fulfilling Plan B (colonization using frozen embryos), alone, with CASE.",
+      science: "Edmunds' planet is furthest from Gargantua: less tidal distortion, Earth-like gravity, stable orbit. Its location makes it the least dramatic and least scientifically extreme of the three worlds, which is exactly why it's the one that works."
     }
   ];
 
@@ -121,7 +121,7 @@
         <!-- Fake horizon illusion line -->
         <line x1="192" y1="65" x2="288" y2="65" stroke="#F59E0B" stroke-width="1" stroke-dasharray="4 3" opacity="0.5"/>
         <text x="340" y="67" font-size="7.5" font-family="mono" fill="#F59E0B60">fake horizon</text>
-        <text x="240" y="120" text-anchor="middle" font-size="9" font-family="Inter" fill="#E8EDF235">Cloud deck mistaken for solid ground — Dr. Mann's lie</text>
+        <text x="240" y="120" text-anchor="middle" font-size="9" font-family="Inter" fill="#E8EDF235">Cloud deck mistaken for solid ground: Dr. Mann's lie</text>
 
       {:else}
         <!-- Edmunds: rocky, Earth-like -->
@@ -139,7 +139,7 @@
         <ellipse cx="260" cy="72" rx="16" ry="10" fill="#10B981" opacity="0.18"/>
         <!-- Thin atmosphere ring -->
         <circle cx="240" cy="65" r="54" fill="none" stroke="#10B981" stroke-width="2" opacity="0.2"/>
-        <text x="240" y="120" text-anchor="middle" font-size="9" font-family="Inter" fill="#E8EDF235">Rocky, stable, breathable — Brand's new home</text>
+        <text x="240" y="120" text-anchor="middle" font-size="9" font-family="Inter" fill="#E8EDF235">Rocky, stable, breathable: Brand's new home</text>
       {/if}
     </svg>
   </div>

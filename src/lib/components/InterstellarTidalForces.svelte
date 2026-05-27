@@ -132,7 +132,7 @@
   <div class="bg-deep-space border border-white/8 rounded-xl p-5">
     <p class="text-[10px] font-mono text-starlight/30 uppercase tracking-wider mb-2">Why the Waves Are So Fast</p>
     <p class="text-sm text-starlight/60 leading-relaxed">
-      Miller's planet is tidally locked — the same face always points toward Gargantua. The enormous waves aren't caused by orbital motion: they're stationary bulges held in place by the tidal force. The planet's own orbital motion means the crew's ship moves <em>through</em> the wave, not that the wave moves toward them. Kip Thorne calculated the waves at roughly 1.2 km tall.
+      Miller's planet is tidally locked: the same face always points toward Gargantua. The enormous waves aren't caused by orbital motion. They're stationary bulges held in place by the tidal force. The planet's own orbital motion means the crew's ship moves <em>through</em> the wave, not that the wave moves toward them. Kip Thorne calculated the waves at roughly 1.2 km tall.
     </p>
   </div>
 </div>

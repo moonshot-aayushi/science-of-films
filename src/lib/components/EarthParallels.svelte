@@ -9,7 +9,7 @@
       energySource: 'Sunlight (400–700 nm)',
       survivalRange: '−5°C to 45°C',
       efficiency: '~3–6% solar conversion',
-      connection: 'Astrophage\'s photoreceptor lattice is a direct analogue of the thylakoid membrane in chloroplasts — both convert photons into stored chemical energy. Astrophage appears to do this at roughly 1,000× greater efficiency, however.',
+      connection: 'Astrophage\'s photoreceptor lattice is a direct analogue of the thylakoid membrane in chloroplasts: both convert photons into stored chemical energy. Astrophage appears to do this at roughly 1,000× greater efficiency, however.',
       keydiff: 'Chloroplasts require liquid water. Astrophage thrives in near-vacuum stellar corona at millions of degrees.'
     },
     {
@@ -18,8 +18,8 @@
       habitat: 'Everywhere (moss, oceans, glaciers)',
       energySource: 'Organic matter',
       survivalRange: '−272°C to +150°C',
-      efficiency: 'N/A — metabolic suspension',
-      connection: 'Tardigrades enter cryptobiosis and survive conditions that should be lethal — near-absolute-zero, hard vacuum, intense radiation. Astrophage similarly operates in an environment that should be incompatible with any life we know.',
+      efficiency: 'N/A (metabolic suspension)',
+      connection: 'Tardigrades enter cryptobiosis and survive conditions that should be lethal: near-absolute-zero, hard vacuum, intense radiation. Astrophage similarly operates in an environment that should be incompatible with any life we know.',
       keydiff: 'Tardigrades survive extremes by suspending life; Astrophage thrives actively within them.'
     },
     {
@@ -39,8 +39,8 @@
       energySource: 'Inorganic chemicals (H₂S, Fe²⁺)',
       survivalRange: 'Up to 121°C (Strain 121)',
       efficiency: '~40% chemical conversion',
-      connection: 'Chemolithotrophs live in total darkness, deriving energy from inorganic chemistry rather than sunlight. They demonstrate that photosynthesis is not the only viable energy strategy for life — Astrophage independently evolved an even more exotic one.',
-      keydiff: 'Vent organisms use chemical gradients; Astrophage uses stellar photon flux — both exploit extreme environmental energy sources.'
+      connection: 'Chemolithotrophs live in total darkness, deriving energy from inorganic chemistry rather than sunlight. They demonstrate that photosynthesis is not the only viable energy strategy for life. Astrophage independently evolved an even more exotic one.',
+      keydiff: 'Vent organisms use chemical gradients; Astrophage uses stellar photon flux. Both exploit extreme environmental energy sources.'
     }
   ];
 </script>

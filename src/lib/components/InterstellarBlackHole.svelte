@@ -18,25 +18,25 @@
       label: 'Event Horizon Shadow',
       color: '#00D4FF',
       stat: 'Apparent radius: ~2.6 r_s',
-      body: "The dark circle isn't the black hole itself — it's the photon capture cross-section. Any light entering this region is permanently captured. The apparent shadow is about 2.6× larger than the actual event horizon because Gargantua's gravity bends nearby light paths inward. For a 100-million solar-mass black hole, this shadow spans roughly 5 AU — wider than Jupiter's orbit."
+      body: "The dark circle isn't the black hole itself. It's the photon capture cross-section. Any light entering this region is permanently captured. The apparent shadow is about 2.6× larger than the actual event horizon because Gargantua's gravity bends nearby light paths inward. For a 100-million solar-mass black hole, this shadow spans roughly 5 AU, wider than Jupiter's orbit."
     },
     ring: {
       label: 'Photon Ring',
       color: '#FFD080',
       stat: 'Location: 1.5 r_s',
-      body: "At exactly 1.5 Schwarzschild radii, photons travel in unstable circular orbits. Light grazing this boundary loops the black hole one, two, or many times before escaping — each extra half-loop creates another sub-ring. The cumulative effect is an intensely bright, hair-thin luminous ring just outside the shadow. Kip Thorne's equations produced the correct appearance for the first time in cinema history."
+      body: "At exactly 1.5 Schwarzschild radii, photons travel in unstable circular orbits. Light grazing this boundary loops the black hole one, two, or many times before escaping; each extra half-loop creates another sub-ring. The cumulative effect is an intensely bright, hair-thin luminous ring just outside the shadow. Kip Thorne's equations produced the correct appearance for the first time in cinema history."
     },
     disk: {
       label: 'Accretion Disk',
       color: '#F5A623',
       stat: 'Temperature: millions K',
-      body: "Plasma heated to millions of Kelvin orbits at near-light speeds. The left (approaching) side is dramatically brighter — relativistic Doppler beaming amplifies photon energy as the disk rotates toward the observer, while the receding right side is dim and redshifted. Rendering this correctly for Interstellar produced two peer-reviewed scientific papers as a side effect."
+      body: "Plasma heated to millions of Kelvin orbits at near-light speeds. The left (approaching) side is dramatically brighter: relativistic Doppler beaming amplifies photon energy as the disk rotates toward the observer, while the receding right side is dim and redshifted. Rendering this correctly for Interstellar produced two peer-reviewed scientific papers as a side effect."
     },
     lensed: {
       label: 'Lensed Disk Image',
       color: '#A0C4FF',
       stat: 'Same disk, bent 180°+',
-      body: "Light from the far side of the accretion disk — which should be completely hidden behind the black hole — is bent entirely over the shadow by Gargantua's extreme gravity, reappearing as a bright arc above (and below) it. This is the same disk seen along a different curved light path. Successive lensed copies stack up as increasingly thin arcs near the photon ring."
+      body: "Light from the far side of the accretion disk (which should be completely hidden behind the black hole) is bent entirely over the shadow by Gargantua's extreme gravity, reappearing as a bright arc above and below it. This is the same disk seen along a different curved light path. Successive lensed copies stack up as increasingly thin arcs near the photon ring."
     }
   } as const;
 
@@ -163,7 +163,7 @@
     <p class="text-sm text-starlight/60 leading-relaxed">
       Physicist Kip Thorne (Nobel Prize 2017) wrote the gravitational lensing equations used by
       DNEG's rendering team. The simulation was accurate enough to produce two unexpected
-      scientific discoveries about the photon ring's appearance — and both were published in
+      scientific discoveries about the photon ring's appearance. Both were published in
       peer-reviewed journals. It was the first scientifically accurate black hole depicted in cinema.
     </p>
   </div>

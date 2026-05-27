@@ -3,38 +3,38 @@
 
   const steps = [
     {
-      label: '1D — Line',
+      label: '1D · Line',
       shortLabel: '1D',
       title: 'One Dimension: Position',
-      body: "A single dimension lets you describe position along a line. You can move forward or backward — there is no up, no left, only one axis. All of classical physics begins here: distance = speed × time.",
+      body: "A single dimension lets you describe position along a line. You can move forward or backward. There is no up, no left, only one axis. All of classical physics begins here: distance = speed × time.",
       color: '#00D4FF'
     },
     {
-      label: '2D — Plane',
+      label: '2D · Plane',
       shortLabel: '2D',
       title: 'Two Dimensions: A Surface',
-      body: "Add a second axis perpendicular to the first and you get a plane. A 2D being could move anywhere on a sheet — but could not step off it. They would have no concept of 'above' or 'below.' A flat circle drawn on a 2D plane is a complete barrier: no way through without leaving the plane.",
+      body: "Add a second axis perpendicular to the first and you get a plane. A 2D being could move anywhere on a sheet but could not step off it. They would have no concept of 'above' or 'below.' A flat circle drawn on a 2D plane is a complete barrier: no way through without leaving the plane.",
       color: '#60C0FF'
     },
     {
-      label: '3D — Space',
+      label: '3D · Space',
       shortLabel: '3D',
       title: 'Three Dimensions: Our World',
-      body: "The three spatial dimensions define physical reality as we experience it. A cube is the natural extension of a square into 3D. A sphere is the 3D extension of a circle. Our universe has three spatial dimensions — and also one more: time.",
+      body: "The three spatial dimensions define physical reality as we experience it. A cube is the natural extension of a square into 3D. A sphere is the 3D extension of a circle. Our universe has three spatial dimensions, and also one more: time.",
       color: '#A0D0FF'
     },
     {
-      label: '4D — Time',
+      label: '4D · Time',
       shortLabel: '4D',
       title: 'Four Dimensions: Adding Time',
-      body: "Einstein's insight: time is a fourth dimension, mathematically equivalent to space. Every event in the universe is located at four coordinates: x, y, z, and t. The universe isn't a snapshot — it's a four-dimensional block called the spacetime manifold, where past, present, and future all exist simultaneously.",
+      body: "Einstein's insight: time is a fourth dimension, mathematically equivalent to space. Every event in the universe is located at four coordinates: x, y, z, and t. The universe isn't a snapshot. It's a four-dimensional block called the spacetime manifold, where past, present, and future all exist simultaneously.",
       color: '#F5A623'
     },
     {
-      label: '5D — The Bulk',
+      label: '5D · The Bulk',
       shortLabel: '5D',
       title: 'Five Dimensions: The Tesseract',
-      body: "Interstellar posits that advanced beings exist in five dimensions — three of space, one of time, and one more. From the fifth dimension, time becomes spatial: you can move through it the way we move through space. The 'Tesseract' is a 3D projection of this 5D structure, arranged so Cooper can reach any point in Murph's timeline by moving through shelves. The books falling from shelves encode Morse code messages — communicating through gravity across time.",
+      body: "Interstellar posits that advanced beings exist in five dimensions: three of space, one of time, and one more. From the fifth dimension, time becomes spatial and you can move through it the way we move through space. The 'Tesseract' is a 3D projection of this 5D structure, arranged so Cooper can reach any point in Murph's timeline by moving through shelves. The books falling from shelves encode Morse code messages, communicating through gravity across time.",
       color: '#FFD080'
     }
   ];
@@ -149,7 +149,7 @@
         <circle cx="200" cy="92" r="3" fill="#F5A623" opacity="0.8"/>
         <text x="210" y="74" font-size="8" font-family="mono" fill="#F5A62370">gravity signal</text>
         <text x="240" y="185" text-anchor="middle" font-size="9" font-family="Inter" fill="#E8EDF225">
-          Time as a spatial dimension — accessible from the 5th
+          Time as a spatial dimension, accessible from the 5th
         </text>
       {/if}
     </svg>

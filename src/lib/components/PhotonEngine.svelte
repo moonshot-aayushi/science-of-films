@@ -6,10 +6,10 @@
   let timer: ReturnType<typeof setInterval>;
 
   const steps = [
-    { label: 'Photons Approach', desc: '585 nm photons radiate outward from the stellar corona. The Astrophage membrane is tuned specifically to this wavelength — other wavelengths pass through or are reflected.' },
+    { label: 'Photons Approach', desc: '585 nm photons radiate outward from the stellar corona. The Astrophage membrane is tuned specifically to this wavelength; other wavelengths pass through or are reflected.' },
     { label: 'Membrane Absorption', desc: 'Photons penetrate the outer membrane and strike the photoreceptor lattice. Each receptor captures one photon and undergoes a conformational change, triggering the energy cascade.' },
-    { label: 'Energy Storage', desc: 'The captured energy is converted into extremely dense chemical bonds within the energy vacuole. This process has no known analogue in terrestrial biochemistry — the energy density exceeds nuclear fission by a factor of 20.' },
-    { label: 'Threshold Reached', desc: 'When the vacuole reaches ~80% charge capacity, the reproductive core activates. The cell undergoes binary fission within ~1 hour, doubling the local population — and doubling the star\'s energy drain.' }
+    { label: 'Energy Storage', desc: 'The captured energy is converted into extremely dense chemical bonds within the energy vacuole. This process has no known analogue in terrestrial biochemistry. The energy density exceeds nuclear fission by a factor of 20.' },
+    { label: 'Threshold Reached', desc: 'When the vacuole reaches ~80% charge capacity, the reproductive core activates. The cell undergoes binary fission within ~1 hour, doubling the local population and doubling the star\'s energy drain.' }
   ];
 
   function play() {

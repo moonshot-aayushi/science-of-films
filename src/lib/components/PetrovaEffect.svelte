@@ -73,7 +73,7 @@
 
         <!-- Star label -->
         <text x="130" y="228" text-anchor="middle" fill="#E8EDF2" font-size="11" font-family="Inter" opacity="0.4">
-          {coverage < 1 ? 'Tau Ceti — baseline' : coverage < 10 ? 'early colonization' : coverage < 40 ? 'Petrova dimming' : 'critical coverage'}
+          {coverage < 1 ? 'Tau Ceti (baseline)' : coverage < 10 ? 'early colonization' : coverage < 40 ? 'Petrova dimming' : 'critical coverage'}
         </text>
       </svg>
     </div>
@@ -115,8 +115,8 @@
   <!-- Slider -->
   <div>
     <div class="flex justify-between text-xs font-mono text-starlight/35 mb-2">
-      <span>0% — pristine star</span>
-      <span>100% — complete colonization</span>
+      <span>0% (pristine star)</span>
+      <span>100% (full colonization)</span>
     </div>
     <input type="range" min="0" max="100" step="0.1" bind:value={coverage} class="w-full"/>
   </div>
@@ -125,9 +125,9 @@
   <div class="bg-astrophage/6 border border-astrophage/20 rounded-xl p-4">
     <p class="text-xs font-mono text-astrophage/70 uppercase tracking-wider mb-2">In the Novel</p>
     <p class="text-sm text-starlight/65 leading-relaxed">
-      The "Petrova line" — a visible dimming of affected stars — is detectable at just 0.1–3% coverage.
+      The "Petrova line," a visible dimming of affected stars, is detectable at just 0.1–3% coverage.
       At the start of <em>Project Hail Mary</em>, 14 stars show the Petrova line. Earth's sun has already begun to dim.
-      Ryland Grace's mission is to find out why Tau Ceti <em>doesn't</em> have the problem — and reverse-engineer the solution.
+      Ryland Grace's mission is to find out why Tau Ceti <em>doesn't</em> have the problem, and reverse-engineer the solution.
     </p>
   </div>
 </div>

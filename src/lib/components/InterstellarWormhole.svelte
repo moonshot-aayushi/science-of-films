@@ -27,15 +27,15 @@
   const panels = {
     sphere: {
       title: 'Why a Sphere, Not a Ring',
-      body: "Most sci-fi depicts wormholes as flat rings or portals. Interstellar — advised by Kip Thorne — showed it correctly: a perfect sphere. A wormhole is a tunnel in three-dimensional space. Its mouth is a sphere, just as a hole in a 2D sheet appears as a circle. Looking at it, you'd see the stars of the destination galaxy distorted across its surface — like a cosmic lens ball."
+      body: "Most sci-fi depicts wormholes as flat rings or portals. Interstellar (advised by Kip Thorne) showed it correctly: a perfect sphere. A wormhole is a tunnel in three-dimensional space. Its mouth is a sphere, just as a hole in a 2D sheet appears as a circle. Looking at it, you'd see the stars of the destination galaxy distorted across its surface, like a cosmic lens ball."
     },
     bridge: {
       title: 'The Einstein-Rosen Bridge',
-      body: "Einstein and Rosen's 1935 paper described a 'bridge' connecting two separate regions of spacetime. In theory, extreme mass-energy warps space enough to create a shortcut. The problem: any naturally-forming wormhole collapses almost instantly. Traversable wormholes require 'exotic matter' with negative energy density — which may not exist. Interstellar's wormhole was placed there by 'them' — fifth-dimensional beings who presumably solved this problem."
+      body: "Einstein and Rosen's 1935 paper described a 'bridge' connecting two separate regions of spacetime. In theory, extreme mass-energy warps space enough to create a shortcut. The problem: any naturally-forming wormhole collapses almost instantly. Traversable wormholes require 'exotic matter' with negative energy density, which may not exist. Interstellar's wormhole was placed there by 'them', fifth-dimensional beings who presumably solved this problem."
     },
     film: {
       title: "Saturn's Wormhole",
-      body: "The film places the wormhole in Saturn's orbit, at the Lagrange point L2. Its location near Saturn wasn't arbitrary — by the time of the story, humanity had 48 years to mount crewed missions to study it (since Lazarus missions began decades earlier). Saturn's placement gave the Endurance a gravity-assist opportunity and provided a recognizable landmark for audiences. The sphere is ~2 km in diameter in the film."
+      body: "The film places the wormhole in Saturn's orbit, at the Lagrange point L2. Its location near Saturn wasn't arbitrary. By the time of the story, humanity had 48 years to mount crewed missions to study it (since Lazarus missions began decades earlier). Saturn's placement gave the Endurance a gravity-assist opportunity and provided a recognizable landmark for audiences. The sphere is ~2 km in diameter in the film."
     }
   };
 

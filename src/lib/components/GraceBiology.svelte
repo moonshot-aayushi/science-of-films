@@ -11,7 +11,7 @@
       recoveryMonths: 18,
       color: '#00D4FF',
       mechanism: 'Vibration therapy + electrostimulation',
-      detail: 'Bones require mechanical load to stay dense — in microgravity, that load vanishes. ISS astronauts lose 1–2% bone density per month, a rate faster than severe osteoporosis. After 3+ years, without intervention, Grace\'s bones would be fragile enough to fracture from walking. The Hail Mary\'s medical pod delivers low-frequency mechanical vibration directly to bone tissue, mimicking skeletal loading.',
+      detail: 'Bones require mechanical load to stay dense. In microgravity, that load vanishes. ISS astronauts lose 1–2% bone density per month, a rate faster than severe osteoporosis. After 3+ years without intervention, Grace\'s bones would be fragile enough to fracture from walking. The Hail Mary\'s medical pod delivers low-frequency mechanical vibration directly to bone tissue, mimicking skeletal loading.',
       realWorld: 'ISS crew members undergo 2.5 hours of daily resistance exercise specifically to slow this effect. They still land with measurable bone loss after 6-month missions.'
     },
     {
@@ -22,8 +22,8 @@
       recoveryMonths: 9,
       color: '#F5A623',
       mechanism: 'Electrical muscle stimulation (EMS)',
-      detail: 'Skeletal muscle atrophies without contraction signals. Bed-rest studies show ~0.5% muscle mass loss per day in the first weeks, tapering as the body adapts to its new (lower) equilibrium. After 3 years in a coma, voluntary muscle mass could drop to under 25% of baseline — Grace would be unable to sit up unassisted. The pod runs EMS cycles through all major muscle groups, maintaining ~70% mass.',
-      realWorld: 'EMS is used clinically for patients with spinal injuries. It\'s genuinely effective at preventing atrophy — the challenge is coverage across all 640+ muscles in the human body.'
+      detail: 'Skeletal muscle atrophies without contraction signals. Bed-rest studies show ~0.5% muscle mass loss per day in the first weeks, tapering as the body adapts to its new (lower) equilibrium. After 3 years in a coma, voluntary muscle mass could drop to under 25% of baseline. Grace would be unable to sit up unassisted. The pod runs EMS cycles through all major muscle groups, maintaining ~70% mass.',
+      realWorld: 'EMS is used clinically for patients with spinal injuries. It\'s genuinely effective at preventing atrophy, but the challenge is coverage across all 640+ muscles in the human body.'
     },
     {
       name: 'Cardiovascular',
@@ -33,7 +33,7 @@
       recoveryMonths: 5,
       color: '#FF6B35',
       mechanism: 'Centrifuge bed + cardiac compression assist',
-      detail: 'The heart is a muscle. In microgravity, blood pools toward the head (astronauts get puffy faces), cardiac output drops, and the heart remodels — it literally becomes more spherical and smaller as it doesn\'t need to pump against gravity. Resting heart rate increases to compensate for reduced stroke volume. The pod applies mild centrifugal force and external cardiac compression to maintain cardiac conditioning.',
+      detail: 'The heart is a muscle. In microgravity, blood pools toward the head (astronauts get puffy faces), cardiac output drops, and the heart remodels: it literally becomes more spherical and smaller as it doesn\'t need to pump against gravity. Resting heart rate increases to compensate for reduced stroke volume. The pod applies mild centrifugal force and external cardiac compression to maintain cardiac conditioning.',
       realWorld: 'After 6 months on ISS, astronauts show measurable cardiac remodeling. NASA is researching "artificial gravity sleeper pods" for Mars missions for exactly this reason.'
     },
     {
@@ -44,7 +44,7 @@
       recoveryMonths: 24,
       color: '#C084FC',
       mechanism: 'Transcranial stimulation + memory replay',
-      detail: 'Prolonged coma disrupts memory consolidation — the hippocampus requires sleep cycles to transfer short-term to long-term memory. Extended unconsciousness causes retrograde amnesia (erasing events before the coma) and anterograde deficits. Grace\'s waking with no memory of his past or his mission is medically realistic. The pod can\'t fix this without active neural stimulation, and even with it, cognitive recovery is the slowest of all systems.',
+      detail: 'Prolonged coma disrupts memory consolidation: the hippocampus requires sleep cycles to transfer short-term to long-term memory. Extended unconsciousness causes retrograde amnesia (erasing events before the coma) and anterograde deficits. Grace\'s waking with no memory of his past or his mission is medically realistic. The pod can\'t fix this without active neural stimulation, and even with it, cognitive recovery is the slowest of all systems.',
       realWorld: 'Patients emerging from years-long comas frequently report significant memory gaps. The "Hollywood" version of waking up fully sharp is not accurate.'
     },
     {
@@ -55,7 +55,7 @@
       recoveryMonths: 2,
       color: '#4ADE80',
       mechanism: 'Controlled antigen exposure protocol',
-      detail: 'The adaptive immune system requires ongoing challenge to stay calibrated. Without exposure to pathogens or foreign antigens, T-cell populations decline and immune memory fades. Astronauts on ISS regularly show reactivation of latent viruses (herpes simplex, Epstein-Barr) as immune surveillance weakens. The pod maintains immune competence by periodically introducing controlled antigen doses — essentially a slow, sustained vaccination protocol.',
+      detail: 'The adaptive immune system requires ongoing challenge to stay calibrated. Without exposure to pathogens or foreign antigens, T-cell populations decline and immune memory fades. Astronauts on ISS regularly show reactivation of latent viruses (herpes simplex, Epstein-Barr) as immune surveillance weakens. The pod maintains immune competence by periodically introducing controlled antigen doses, essentially a slow, sustained vaccination protocol.',
       realWorld: 'Immune dysregulation is one of the most consistently documented effects of spaceflight. NASA considers it a primary health risk for any mission beyond low Earth orbit.'
     }
   ];
@@ -127,7 +127,7 @@
       <p class="text-xs font-mono text-red-400/80 uppercase tracking-wider mb-2">Without the medical pod</p>
       <p class="text-sm text-starlight/65 leading-relaxed">
         Grace would wake up unable to move, with bones near-brittle, severe cognitive impairment,
-        and a compromised immune system. He would be dead within hours — possibly minutes — if
+        and a compromised immune system. He would be dead within hours (possibly minutes) if
         he survived waking at all. The autoclave medical system isn't a convenience. It's the only
         reason there's a story.
       </p>
@@ -136,7 +136,7 @@
     <div class="bg-astrophage/6 border border-astrophage/20 rounded-xl p-4">
       <p class="text-xs font-mono text-astrophage/60 uppercase tracking-wider mb-2">Medical pod active</p>
       <p class="text-sm text-starlight/65 leading-relaxed">
-        Grace wakes up weak, disoriented, and with major memory gaps — but alive and functional.
+        Grace wakes up weak, disoriented, and with major memory gaps, but alive and functional.
         His first challenge is figuring out where he is and why he's alone. The pod kept him at
         roughly 70–90% of baseline across most systems. Recovery is possible. The mission isn't over.
       </p>

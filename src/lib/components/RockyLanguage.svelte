@@ -5,8 +5,8 @@
     {
       label: 'Frequency Handshake',
       from: 'Rocky',
-      summary: 'A sweep of tones across hundreds of frequencies — a simple "can you hear this?"',
-      detail: 'Rocky\'s first transmission was a structured frequency sweep from ~10 Hz to ~80 kHz. Grace, with human hearing capped at ~20 kHz, could only respond to a fraction of it. By noting which responses Rocky got back, both parties mapped the other\'s hearing range. Neither could speak the other\'s full language — but they found the overlap.',
+      summary: 'A sweep of tones across hundreds of frequencies: a simple "can you hear this?"',
+      detail: 'Rocky\'s first transmission was a structured frequency sweep from ~10 Hz to ~80 kHz. Grace, with human hearing capped at ~20 kHz, could only respond to a fraction of it. By noting which responses Rocky got back, both parties mapped the other\'s hearing range. Neither could speak the other\'s full language, but they found the overlap.',
       breakthrough: 'Shared hearing range identified. Both know communication is possible.',
       visual: 'spectrum'
     },
@@ -14,7 +14,7 @@
       label: 'Prime Numbers',
       from: 'Rocky',
       summary: '2 clicks. 3 clicks. 5 clicks. 7 clicks. Pause. 11 clicks.',
-      detail: 'Rocky sent groups of tones: two, then three, then five, then seven, then eleven. Prime numbers are universal — they\'re not a human convention, they\'re a mathematical fact. Any intelligence capable of building a spaceship recognizes them. Grace responded with 13, 17, 19. They had just confirmed to each other: we are both mathematically intelligent beings.',
+      detail: 'Rocky sent groups of tones: two, then three, then five, then seven, then eleven. Prime numbers are universal: they\'re not a human convention, they\'re a mathematical fact. Any intelligence capable of building a spaceship recognizes them. Grace responded with 13, 17, 19. They had just confirmed to each other: we are both mathematically intelligent beings.',
       breakthrough: 'Mutual intelligence confirmed. A shared counting system now exists.',
       visual: 'primes'
     },
@@ -22,7 +22,7 @@
       label: 'Arithmetic & Symbols',
       from: 'Grace',
       summary: 'Two clicks. A new sound. Two clicks. A long tone. Four clicks.',
-      detail: 'Grace transmitted: "2 [symbol-A] 2 [symbol-B] 4." Rocky tried different interpretations — multiplication? Concatenation? Grace sent "3 [A] 4 [B] 7" and "5 [A] 6 [B] 11." Rocky deduced [A] = addition, [B] = equals. Then Rocky proposed symbols for subtraction and multiplication. Within hours, they had a complete arithmetic grammar.',
+      detail: 'Grace transmitted: "2 [symbol-A] 2 [symbol-B] 4." Rocky tried different interpretations: multiplication? Concatenation? Grace sent "3 [A] 4 [B] 7" and "5 [A] 6 [B] 11." Rocky deduced [A] = addition, [B] = equals. Then Rocky proposed symbols for subtraction and multiplication. Within hours, they had a complete arithmetic grammar.',
       breakthrough: 'Full arithmetic established. Numbers and operations are shared.',
       visual: 'math'
     },
@@ -30,7 +30,7 @@
       label: 'Physical Anchors',
       from: 'Both',
       summary: 'Rocky taps the wall. Measures the echo time. Taps again. Both now own a second.',
-      detail: 'To establish real units, they needed a shared physical reference. Rocky measured the speed of sound through the ship\'s shared atmosphere — they could both hear the tap and count the echo delay in clicks. That delay became their shared "second." From a shared second, you can derive meters (distance light travels), and from meters and seconds, everything else follows. The universe\'s constants are universal.',
+      detail: 'To establish real units, they needed a shared physical reference. Rocky measured the speed of sound through the ship\'s shared atmosphere: they could both hear the tap and count the echo delay in clicks. That delay became their shared "second." From a shared second, you can derive meters (distance light travels), and from meters and seconds, everything else follows. The universe\'s constants are universal.',
       breakthrough: 'Shared time unit derived from physics. All SI units now derivable.',
       visual: 'physics'
     },
@@ -38,8 +38,8 @@
       label: 'Chemical Identity',
       from: 'Grace',
       summary: '6 clicks. 8 clicks. 6 clicks. Rocky goes quiet for a moment, then responds.',
-      detail: 'Grace transmitted atomic numbers: 6 (Carbon), 8 (Oxygen), 6 (Carbon) — CO₂. Rocky recognized the pattern. Then Grace sent: 1 click, 2 clicks, 1 click — H₂O (water). Rocky\'s reply was dramatic: 7 clicks, 1-1-1 clicks — NH₃ (ammonia). They had just told each other what they were made of. Two radically different biochemistries, meeting in the void between stars.',
-      breakthrough: 'Biochemical identities exchanged. They understand they are profoundly alien to each other — and that doesn\'t matter.',
+      detail: 'Grace transmitted atomic numbers: 6 (Carbon), 8 (Oxygen), 6 (Carbon) = CO₂. Rocky recognized the pattern. Then Grace sent: 1 click, 2 clicks, 1 click = H₂O (water). Rocky\'s reply was dramatic: 7 clicks, 1-1-1 clicks = NH₃ (ammonia). They had just told each other what they were made of. Two radically different biochemistries, meeting in the void between stars.',
+      breakthrough: 'Biochemical identities exchanged. They understand they are profoundly alien to each other, and that doesn\'t matter.',
       visual: 'chemistry'
     }
   ];
@@ -101,7 +101,7 @@
       <div class="w-2.5 h-2.5 rounded-full bg-red-500/60"></div>
       <div class="w-2.5 h-2.5 rounded-full bg-yellow-500/60"></div>
       <div class="w-2.5 h-2.5 rounded-full bg-green-500/60"></div>
-      <span class="ml-2 text-xs font-mono text-starlight/30">COMM LOG — Stage {stageIdx + 1} of 5</span>
+      <span class="ml-2 text-xs font-mono text-starlight/30">COMM LOG · Stage {stageIdx + 1} of 5</span>
       <span class="ml-auto text-xs font-mono text-astrophage/60">Source: {current.from}</span>
     </div>
 
@@ -167,7 +167,7 @@
               fill={item.sym ? '#00D4FF' : '#F5A623'}
               opacity={item.dim ? 0.2 : item.sym ? 0.8 : 0.9}>{item.label}</text>
           {/each}
-          <text x="20" y="65" font-size="9" font-family="mono" fill="#E8EDF2" opacity="0.3">arithmetic grammar — shared in ~2 hours</text>
+          <text x="20" y="65" font-size="9" font-family="mono" fill="#E8EDF2" opacity="0.3">arithmetic grammar, shared in ~2 hours</text>
         </svg>
 
       {:else if current.visual === 'physics'}

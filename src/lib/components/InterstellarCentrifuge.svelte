@@ -15,10 +15,10 @@
   })();
 
   const statusInfo: Record<Status, { label: string; color: string; note: string }> = {
-    low:       { label: 'Insufficient gravity',  color: '#EF4444', note: 'Below 0.3g — muscle and bone loss accelerates significantly.' },
+    low:       { label: 'Insufficient gravity',  color: '#EF4444', note: 'Below 0.3g: muscle and bone loss accelerates significantly.' },
     coriolis:  { label: 'Coriolis risk',          color: '#F59E0B', note: 'Above ~3 RPM the Coriolis effect causes nausea when moving your head. The inner ear detects rotation the ring can\'t mask.' },
     good:      { label: 'Comfortable',            color: '#22C55E', note: 'Good balance of gravity and rotation rate. Crew can work normally.' },
-    high:      { label: 'Excessive g-force',      color: '#F59E0B', note: 'Above 1.4g — fatigue sets in. Heavy for continuous habitation.' }
+    high:      { label: 'Excessive g-force',      color: '#F59E0B', note: 'Above 1.4g: fatigue sets in. Heavy for continuous habitation.' }
   };
 
   // Reference designs
@@ -211,7 +211,7 @@
   <!-- Reference designs -->
   <div class="bg-deep-space border border-white/8 rounded-xl overflow-hidden">
     <div class="px-5 py-3 border-b border-white/5">
-      <p class="text-[10px] font-mono text-starlight/30 uppercase tracking-widest">Reference Designs — click to load</p>
+      <p class="text-[10px] font-mono text-starlight/30 uppercase tracking-widest">Reference Designs · click to load</p>
     </div>
     {#each refs as ref}
       <!-- svelte-ignore a11y-click-events-have-key-events a11y-no-static-element-interactions -->
@@ -243,7 +243,7 @@
   <div class="bg-deep-space border border-white/8 rounded-xl p-5">
     <p class="text-[10px] font-mono text-starlight/30 uppercase tracking-wider mb-2">The Coriolis Problem</p>
     <p class="text-sm text-starlight/60 leading-relaxed">
-      Spinning fast enough creates gravity, but the inner ear notices the rotation. Above ~2–3 RPM, simply turning your head triggers vertigo — the semicircular canals detect angular motion the visual system can't explain. The only solution is a bigger ring: double the radius, halve the RPM needed for the same g-force. Real centrifuge proposals — Von Braun Station, Nautilus-X — all aim for a ≥100m radius to keep RPM below the nausea threshold. The Endurance sits right at the edge.
+      Spinning fast enough creates gravity, but the inner ear notices the rotation. Above ~2–3 RPM, simply turning your head triggers vertigo: the semicircular canals detect angular motion the visual system can't explain. The only solution is a bigger ring. Double the radius and you halve the RPM needed for the same g-force. Real centrifuge proposals (Von Braun Station, Nautilus-X) all aim for a ≥100m radius to keep RPM below the nausea threshold. The Endurance sits right at the edge.
     </p>
   </div>
 </div>

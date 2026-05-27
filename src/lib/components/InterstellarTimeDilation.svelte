@@ -113,7 +113,7 @@
     <div class="bg-deep-space border border-white/8 rounded-xl p-4">
       <p class="text-[10px] font-mono text-starlight/30 uppercase tracking-wider mb-2">Why Miller's Planet Works</p>
       <p class="text-xs text-starlight/50 leading-relaxed">
-        The 61,320:1 dilation requires a near-extremal <em>Kerr</em> black hole (spin parameter a ≈ 1). Gargantua's rapid spin allows stable prograde orbits far closer to the event horizon than Schwarzschild geometry permits — making Miller's planet physically possible.
+        The 61,320:1 dilation requires a near-extremal <em>Kerr</em> black hole (spin parameter a ≈ 1). Gargantua's rapid spin allows stable prograde orbits far closer to the event horizon than Schwarzschild geometry permits, making Miller's planet physically possible.
       </p>
     </div>
   </div>
@@ -121,7 +121,7 @@
   {#if proximity >= 95}
     <div class="bg-astrophage/8 border border-astrophage/30 rounded-xl p-4">
       <p class="text-sm text-astrophage/90 leading-relaxed">
-        <strong>Miller's Planet:</strong> Every hour here, 7 years pass on Earth. Cooper's children age decades while he experiences hours. This is not science fiction — it is a direct consequence of Einstein's general relativity.
+        <strong>Miller's Planet:</strong> Every hour here, 7 years pass on Earth. Cooper's children age decades while he experiences hours. This is not science fiction. It is a direct consequence of Einstein's general relativity.
       </p>
     </div>
   {/if}

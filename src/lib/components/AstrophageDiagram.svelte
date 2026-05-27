@@ -8,24 +8,24 @@
       name: 'Outer Membrane',
       detail: 'Selectively transmits 585 nm light',
       science: 'The outer membrane is approximately 60× thicker than a typical terrestrial cell membrane. It is composed of a carbon-based polymer that is nearly opaque to radiation above 700 nm and below 400 nm, protecting the interior while permitting the 585 nm "Petrova frequency" light to pass through and reach the photoreceptor lattice.',
-      parallel: 'Analogous to the glass of a greenhouse — transparent to useful wavelengths, a barrier to damaging ones.'
+      parallel: 'Analogous to greenhouse glass: transparent to useful wavelengths, a barrier to damaging ones.'
     },
     photoreceptors: {
       name: 'Photoreceptor Lattice',
       detail: '~10⁸ receptors per μm², tuned to 585 nm',
       science: 'An array of protein-analogue structures arranged in a crystalline lattice directly beneath the membrane. Each receptor captures individual photons and initiates a cascade that ultimately stores energy as chemical bonds in the vacuole. The 585 nm resonance matches the peak spectral output of a mid-sequence star\'s corona.',
-      parallel: 'Functionally mirrors chlorophyll in plant chloroplasts — photon-harvesting molecular arrays that initiate energy conversion.'
+      parallel: 'Functionally mirrors chlorophyll in plant chloroplasts, photon-harvesting molecular arrays that initiate energy conversion.'
     },
     vacuole: {
       name: 'Energy Storage Vacuole',
       detail: '~1 petajoule stored per gram',
-      science: 'The vacuole stores photon-derived energy as extremely dense chemical bonds — far exceeding any known terrestrial biochemistry. 1 gram of fully charged Astrophage stores approximately 1 × 10¹⁵ joules (1 petajoule). By comparison, 1 gram of TNT releases ~4,600 joules. Astrophage is ~2 × 10¹¹ times more energy-dense.',
-      parallel: 'ATP is biology\'s energy currency on Earth — but ATP stores only ~0.05 eV per bond. Astrophage bonds store orders of magnitude more per unit mass.'
+      science: 'The vacuole stores photon-derived energy as extremely dense chemical bonds, far exceeding any known terrestrial biochemistry. 1 gram of fully charged Astrophage stores approximately 1 × 10¹⁵ joules (1 petajoule). By comparison, 1 gram of TNT releases ~4,600 joules. Astrophage is ~2 × 10¹¹ times more energy-dense.',
+      parallel: 'ATP is biology\'s energy currency on Earth, but ATP stores only ~0.05 eV per bond. Astrophage bonds store orders of magnitude more per unit mass.'
     },
     core: {
       name: 'Reproductive Core',
       detail: 'Binary fission, energy-threshold gated',
-      science: 'The core contains an RNA-equivalent genetic strand that encodes all cellular information. Crucially, reproduction only initiates when the energy vacuole exceeds ~80% capacity. Under ideal stellar corona conditions, division takes approximately 1 hour — implying exponential colony growth that can dim a star within centuries.',
+      science: 'The core contains an RNA-equivalent genetic strand that encodes all cellular information. Crucially, reproduction only initiates when the energy vacuole exceeds ~80% capacity. Under ideal stellar corona conditions, division takes approximately 1 hour, implying exponential colony growth that can dim a star within centuries.',
       parallel: 'Similar to how yeast enter a dormant state until nutrient thresholds are met, then proliferate explosively.'
     }
   };

@@ -6,32 +6,32 @@
       label: 'Discovery',
       icon: '🔭',
       summary: 'A cloud sample from Tau Ceti e contains something that shouldn\'t be there.',
-      detail: 'Grace sends a probe into the upper atmosphere of Tau Ceti e — the most Astrophage-dense planet in the system. The sample cultures he runs show a surprising result: Astrophage colonies are dying. Not starving, not reproducing slowly — actively dying, being consumed. Something in the sample is eating them. That something is Taumoeba.',
-      breakthrough: 'Natural predator of Astrophage identified. The Tau Ceti system has achieved ecological balance — Astrophage and Taumoeba co-exist as prey and predator.',
+      detail: 'Grace sends a probe into the upper atmosphere of Tau Ceti e, the most Astrophage-dense planet in the system. The sample cultures he runs show a surprising result: Astrophage colonies are dying. Not starving, not reproducing slowly. Actively dying, being consumed. Something in the sample is eating them. That something is Taumoeba.',
+      breakthrough: 'Natural predator of Astrophage identified. The Tau Ceti system has achieved ecological balance: Astrophage and Taumoeba co-exist as prey and predator.',
       visual: 'discovery'
     },
     {
       label: 'The Mechanism',
       icon: '⚗',
       summary: 'Taumoeba secretes a compound that disrupts Astrophage\'s energy bonds.',
-      detail: 'Taumoeba attaches to the outer membrane of an Astrophage cell and releases an enzyme that degrades the molecular structure of the energy vacuole. The stored petajoules discharge as heat — essentially, Taumoeba causes Astrophage to "explode" its own stored energy. This releases more than enough energy for Taumoeba to reproduce. The relationship is pure predation: Astrophage is food, and Taumoeba evolved exclusively to eat it.',
-      breakthrough: 'Mechanism understood. Taumoeba cannot survive without Astrophage — it won\'t consume other organisms, won\'t become a broader ecological threat if introduced to our solar system.',
+      detail: 'Taumoeba attaches to the outer membrane of an Astrophage cell and releases an enzyme that degrades the molecular structure of the energy vacuole. The stored petajoules discharge as heat. Essentially, Taumoeba causes Astrophage to "explode" its own stored energy. This releases more than enough energy for Taumoeba to reproduce. The relationship is pure predation: Astrophage is food, and Taumoeba evolved exclusively to eat it.',
+      breakthrough: 'Mechanism understood. Taumoeba cannot survive without Astrophage: it won\'t consume other organisms, won\'t become a broader ecological threat if introduced to our solar system.',
       visual: 'mechanism'
     },
     {
       label: 'The Temperature Problem',
       icon: '🌡',
       summary: 'Taumoeba thrives at 40°C. Sol\'s corona needs it at 150°C+.',
-      detail: 'Tau Ceti is cooler than our Sun. Taumoeba evolved at its conditions — comfortable to about 40°C, dying above 96°C. But to survive in Sol\'s Astrophage-dense zone, it needs to tolerate much higher temperatures. Grace and Rocky design a multi-generation evolution program: breed Taumoeba in controlled cultures, raise temperature 2°C per generation, select survivors. After ~500 generations, they produce a strain tolerant to ~150°C.',
+      detail: 'Tau Ceti is cooler than our Sun. Taumoeba evolved at its conditions: comfortable to about 40°C, dying above 96°C. But to survive in Sol\'s Astrophage-dense zone, it needs to tolerate much higher temperatures. Grace and Rocky design a multi-generation evolution program: breed Taumoeba in controlled cultures, raise temperature 2°C per generation, select survivors. After ~500 generations, they produce a strain tolerant to ~150°C.',
       breakthrough: 'Temperature-hardened Taumoeba strain created. The solution exists. Now it needs to get home.',
       visual: 'temperature'
     },
     {
       label: 'Xenonite & Delivery',
       icon: '⬡',
-      summary: 'Rocky synthesizes xenonite — a material only Eridians can make — to contain the solution.',
-      detail: 'The delivery problem: you need a container that can hold live Taumoeba and Astrophage together without them escaping into space, without killing the organisms, and that can survive re-entry near Earth. Rocky\'s species can synthesize xenonite — an exotic material with extraordinary properties: impermeable to both organisms, thermally stable, transparent to Astrophage\'s 585 nm light (keeping Astrophage alive and reproducing inside), and structurally robust. Grace cannot synthesize it. Rocky makes thousands of xenonite pellets. Each one is a self-contained Astrophage/Taumoeba ecosystem.',
-      breakthrough: 'Delivery vector created. Grace scatters the pellets into Sol\'s Astrophage-dense zone. Each pellet is a seed — Taumoeba will do the rest.',
+      summary: 'Rocky synthesizes xenonite (a material only Eridians can make) to contain the solution.',
+      detail: 'The delivery problem: you need a container that can hold live Taumoeba and Astrophage together without them escaping into space, without killing the organisms, and that can survive re-entry near Earth. Rocky\'s species can synthesize xenonite, an exotic material with extraordinary properties: impermeable to both organisms, thermally stable, transparent to Astrophage\'s 585 nm light (keeping Astrophage alive and reproducing inside), and structurally robust. Grace cannot synthesize it. Rocky makes thousands of xenonite pellets. Each one is a self-contained Astrophage/Taumoeba ecosystem.',
+      breakthrough: 'Delivery vector created. Grace scatters the pellets into Sol\'s Astrophage-dense zone. Each pellet is a seed: Taumoeba will do the rest.',
       visual: 'xenonite'
     }
   ];
@@ -96,7 +96,7 @@
           <text x="310" y="118" text-anchor="middle" font-size="9" font-family="mono" fill="#4ADE80" opacity="0.6">Taumoeba (thriving)</text>
           <!-- Sample boundary -->
           <rect x="30" y="12" width="480" height="100" rx="6" fill="none" stroke="#E8EDF2" stroke-width="0.6" stroke-dasharray="4 4" opacity="0.15"/>
-          <text x="40" y="24" font-size="8" font-family="mono" fill="#E8EDF2" opacity="0.25">Tau Ceti e cloud sample — culture plate</text>
+          <text x="40" y="24" font-size="8" font-family="mono" fill="#E8EDF2" opacity="0.25">Tau Ceti e cloud sample · culture plate</text>
         </svg>
 
       {:else if current.visual === 'mechanism'}

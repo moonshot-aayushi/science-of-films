@@ -128,9 +128,9 @@
   <!-- Speed slider -->
   <div>
     <div class="flex justify-between text-xs font-mono text-starlight/30 mb-2">
-      <span>10% c — modest</span>
+      <span>10% c (modest)</span>
       <span>Hail Mary estimated ≈ 90–95% c</span>
-      <span>99.5% c — theoretical max</span>
+      <span>99.5% c (theoretical max)</span>
     </div>
     <input type="range" min="10" max="99.5" step="0.5" bind:value={speedPct} class="w-full"/>
   </div>
@@ -152,7 +152,7 @@
     <div class="bg-deep-space border {speedPct > 70 ? 'border-astrophage/40' : 'border-white/8'} rounded-xl p-5 text-center transition-colors">
       <p class="text-xs font-mono text-starlight/35 uppercase tracking-wider mb-2">Ship Time (Ryland Grace)</p>
       <p class="text-3xl font-bold {speedPct > 70 ? 'text-astrophage' : 'text-starlight'}">{fmt(shipYears)}<span class="text-lg font-normal opacity-50"> yr</span></p>
-      <p class="text-xs {speedPct > 70 ? 'text-astrophage/50' : 'text-starlight/35'} mt-1">γ = {fmt(gamma, 2)} — {fmt((1 - shipYears/earthYears)*100, 0)}% time savings</p>
+      <p class="text-xs {speedPct > 70 ? 'text-astrophage/50' : 'text-starlight/35'} mt-1">γ = {fmt(gamma, 2)}, {fmt((1 - shipYears/earthYears)*100, 0)}% time savings</p>
     </div>
   </div>
 
@@ -175,7 +175,7 @@
       <p class="text-xs font-mono text-astrophage/60 uppercase tracking-wider mb-2">Why so fast?</p>
       <p class="text-sm text-starlight/60 leading-relaxed">
         Astrophage's 1 PJ/gram energy density gives the Hail Mary a specific impulse far beyond any
-        rocket ever built. At ~90% c, relativistic time dilation becomes significant — Grace experiences
+        rocket ever built. At ~90% c, relativistic time dilation becomes significant: Grace experiences
         only {fmt(shipYears)} years while Earth ages {fmt(earthYears)}. Without this effect, the mission
         would be a multi-generational voyage.
       </p>

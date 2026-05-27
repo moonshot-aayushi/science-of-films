@@ -6,42 +6,42 @@
       feature: 'Biochemical Solvent',
       human: 'Water (H₂O)',
       rocky: 'Liquid ammonia (NH₃)',
-      detail: 'Water is the universal solvent for life on Earth — it dissolves polar molecules, participates in metabolic reactions, and maintains cell structure. Ammonia shares many of these properties and can remain liquid at much higher temperatures under pressure. At Rocky\'s operating temperature (~210°C), water would be vapor; ammonia at high pressure stays liquid. Virtually all of Rocky\'s biochemical reactions run in ammonia the way ours run in water.',
+      detail: 'Water is the universal solvent for life on Earth: it dissolves polar molecules, participates in metabolic reactions, and maintains cell structure. Ammonia shares many of these properties and can remain liquid at much higher temperatures under pressure. At Rocky\'s operating temperature (~210°C), water would be vapor; ammonia at high pressure stays liquid. Virtually all of Rocky\'s biochemical reactions run in ammonia the way ours run in water.',
       humanColor: '#00D4FF', rockyColor: '#F5A623'
     },
     {
       feature: 'Optimal Temperature',
       human: '37°C (98.6°F)',
       rocky: '~210°C (~410°F)',
-      detail: 'Human enzymes denature above ~45°C — proteins literally unfold and stop working. Rocky\'s biochemistry operates at temperatures that would kill a human in seconds. His proteins are built on different molecular principles, stable at temperatures where our chemistry simply breaks down. This is the same principle as extremophile bacteria that thrive in hydrothermal vents — just taken far further.',
+      detail: 'Human enzymes denature above ~45°C: proteins literally unfold and stop working. Rocky\'s biochemistry operates at temperatures that would kill a human in seconds. His proteins are built on different molecular principles, stable at temperatures where our chemistry simply breaks down. This is the same principle as extremophile bacteria that thrive in hydrothermal vents, just taken far further.',
       humanColor: '#00D4FF', rockyColor: '#FF6B35'
     },
     {
       feature: 'Body Symmetry',
       human: 'Bilateral (2-fold)',
       rocky: 'Pentaradial (5-fold)',
-      detail: 'Nearly all complex animals on Earth have bilateral symmetry — a left and right side, evolved for directional movement. Pentaradial symmetry (five equal arms) exists on Earth in echinoderms: starfish, sea urchins. Rocky has no "front" — any of his five arms can be a leading limb. This suggests he evolved in an environment without strong directional pressure (possibly a gas-giant atmosphere where you move in 3D).',
+      detail: 'Nearly all complex animals on Earth have bilateral symmetry: a left and right side, evolved for directional movement. Pentaradial symmetry (five equal arms) exists on Earth in echinoderms: starfish, sea urchins. Rocky has no "front": any of his five arms can be a leading limb. This suggests he evolved in an environment without strong directional pressure (possibly a gas-giant atmosphere where you move in 3D).',
       humanColor: '#00D4FF', rockyColor: '#F5A623'
     },
     {
       feature: 'Primary Sense',
       human: 'Vision (300–700 nm light)',
       rocky: 'Sonar (pressure waves)',
-      detail: 'Rocky has no eyes. He perceives the world through high-frequency sonar — he emits pressure waves and interprets the reflections. This makes him exceptionally good at spatial reasoning and material identification by sound. It also explains why he could so quickly use a musical-tone language with Grace: sound isn\'t just communication for him, it\'s perception. He literally "sees" in frequencies.',
+      detail: 'Rocky has no eyes. He perceives the world through high-frequency sonar: he emits pressure waves and interprets the reflections. This makes him exceptionally good at spatial reasoning and material identification by sound. It also explains why he could so quickly use a musical-tone language with Grace: sound isn\'t just communication for him, it\'s perception. He literally "sees" in frequencies.',
       humanColor: '#00D4FF', rockyColor: '#F5A623'
     },
     {
       feature: 'Limbs',
       human: '4 (2 arms, 2 legs)',
       rocky: '5 equal-function arms',
-      detail: 'Rocky has five manipulator arms, each with multiple finger-like protrusions. All five are equal — there is no distinction between "legs" and "arms." He can walk on any combination of arms and use the rest to manipulate objects. For tool use and engineering, this gives him significant advantages: he can hold a component, tighten a bolt, brace against a surface, and still have free limbs — all simultaneously.',
+      detail: 'Rocky has five manipulator arms, each with multiple finger-like protrusions. All five are equal: there is no distinction between "legs" and "arms." He can walk on any combination of arms and use the rest to manipulate objects. For tool use and engineering, this gives him significant advantages: he can hold a component, tighten a bolt, brace against a surface, and still have free limbs, all simultaneously.',
       humanColor: '#00D4FF', rockyColor: '#F5A623'
     },
     {
       feature: 'Atmosphere',
       human: 'O₂/N₂ (21% oxygen)',
       rocky: 'NH₃-rich (toxic to humans)',
-      detail: 'Rocky\'s native atmosphere is rich in ammonia — immediately lethal to humans at his concentrations. The Hail Mary\'s shared workspace had a dividing wall where each side maintained its own atmosphere. Rocky\'s side was so hot and toxic that Grace could only enter in a suit. From Rocky\'s perspective, the oxygen-rich, ice-cold conditions on Grace\'s side were equally alien.',
+      detail: 'Rocky\'s native atmosphere is rich in ammonia: immediately lethal to humans at his concentrations. The Hail Mary\'s shared workspace had a dividing wall where each side maintained its own atmosphere. Rocky\'s side was so hot and toxic that Grace could only enter in a suit. From Rocky\'s perspective, the oxygen-rich, ice-cold conditions on Grace\'s side were equally alien.',
       humanColor: '#00D4FF', rockyColor: '#F5A623'
     }
   ];
